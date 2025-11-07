@@ -13,10 +13,7 @@ public class GameHandler : MonoBehaviour{
         // void Start () { UpdateScore (); }
 
         void Update(){
-        //NOTE: delete this quit functionality when a Pause Menu is added!
-                // if (Input.GetKey("escape")){
-                //         Application.Quit();
-                // }
+        
 
                 // Stat tester:
                 //if (Input.GetKey("p")){
