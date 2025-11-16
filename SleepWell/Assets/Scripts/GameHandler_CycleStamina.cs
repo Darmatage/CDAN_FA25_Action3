@@ -11,8 +11,9 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	bool isNight = false;
 	public GameObject iconDay;
 	public GameObject iconNight;
-	public int dayLength = 10;
-	public int nightLength = 20;
+	public int nightLength = 60;
+
+	public GameObject GoToSleepButton;
 
 	//Day / Night Timer:
 	float theTimer = 0;
@@ -22,7 +23,6 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	//Sleeping
 	public bool isSleeping = false;
 	public GameObject iconSleeping;
-
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
@@ -42,8 +42,6 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 	}
 
-
-
 	void FixedUpdate()
 	{
 		theTimer += 0.01f;
@@ -52,13 +50,6 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			theTime++;
 			theTimer = 0;
 		}
-
-		if (!isNight && theTime >= dayLength)
-		{
-			SwitchToNight();
-			theTime = 0;
-		}
-
 		else if (isNight && theTime >= nightLength)
 		{
 			SwitchToDay();
@@ -70,6 +61,8 @@ public class GameHandler_CycleStamina : MonoBehaviour
 //DAY / NIGHT CYCLE:
 	void UpdatesTimerDisplay()
 	{
+		if (isDay)
+		{timerText.text = "DAY"}
 		timerText.text = "TIME: " + theTime;
 	}
 
@@ -90,10 +83,12 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 
 //SLEEPING:
-	void StartSleeping()
+	public void StartSleeping()
 	{
 		isSleeping = true;
 		iconSleeping.SetActive(true);
+		SwitchToNight();
+		theTime = 0;
 	}
 
 	void StopSleeping()
