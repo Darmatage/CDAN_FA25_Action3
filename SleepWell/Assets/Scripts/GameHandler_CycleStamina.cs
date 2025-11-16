@@ -9,6 +9,7 @@ using UnityEngine.Audio;
 public class GameHandler_CycleStamina : MonoBehaviour
 {
 	bool isNight = false;
+	bool isDay = true;
 	public GameObject iconDay;
 	public GameObject iconNight;
 	public int nightLength = 60;
@@ -61,8 +62,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 //DAY / NIGHT CYCLE:
 	void UpdatesTimerDisplay()
 	{
-		if (isDay)
-		{timerText.text = "DAY";}
+		if (isDay){timerText.text = "DAY";}
 		timerText.text = "TIME: " + theTime;
 	}
 
