@@ -62,7 +62,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	void UpdatesTimerDisplay()
 	{
 		if (isDay)
-		{timerText.text = "DAY"}
+		{timerText.text = "DAY";}
 		timerText.text = "TIME: " + theTime;
 	}
 
