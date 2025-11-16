@@ -25,7 +25,7 @@ public class GameHandler : MonoBehaviour{
         //        textGameObject.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("Scene1");
+                SceneManager.LoadScene("House_Main");
         }
 
         public void OpenCredits(){
