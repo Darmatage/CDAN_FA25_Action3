@@ -5,26 +5,22 @@ using UnityEngine.UI;
 
 public class RechargeTimer2 : MonoBehaviour
 {
-    public float energyMax =3f;       //set the number of seconds here (both floats can be static)
+    public float energyMax =30f;       //set the number of seconds here (both floats can be static)
     private float energyTimer = 0f;
-    public bool thingOn = false;
 
     public GameObject display;
 
     void Start()
     {
-       energyTimer = energyMax;   
+       energyTimer = 0;   
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("8"))
-        {
-        thingOn = !thingOn;           //reverse the bool, so keypress is a toggle
-        }
+        
     }
-
+/*
     void FixedUpdate()
     {
         if (thingOn == true)
@@ -72,5 +68,5 @@ public class RechargeTimer2 : MonoBehaviour
             }
             }
         }
-    }
+    }*/
 }
