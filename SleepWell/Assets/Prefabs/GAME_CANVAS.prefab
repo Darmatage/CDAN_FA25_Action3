@@ -362,7 +362,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyMax: 3
-  thingOn: 0
   display: {fileID: 1463362246859077715}
 --- !u!1 &1463362246859077715
 GameObject:
@@ -1929,6 +1928,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4172786231980461300, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3621182302751393902}
+    - targetCorrespondingSourceObject: {fileID: 4172786231980461300, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1473917562965725751}
   m_SourcePrefab: {fileID: 100100000, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
 --- !u!1 &3227517316021362648 stripped
 GameObject:
@@ -1956,6 +1958,18 @@ MonoBehaviour:
   timerText: {fileID: 2672342990791633276}
   isSleeping: 0
   iconSleeping: {fileID: 8871010715075474592}
+--- !u!114 &1473917562965725751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227517316021362648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6bb62189cf18b45b5a81f4b2629cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6786320429663017271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408574007882304027, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
