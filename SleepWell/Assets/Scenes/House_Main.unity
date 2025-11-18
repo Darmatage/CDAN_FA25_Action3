@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: offsetX
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8557127893987855489, guid: 6c4070ab4df5d0747b369daebfffa4f8, type: 3}
+      propertyPath: NextLevel
+      value: Outside_BedroomWest
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8173,6 +8177,10 @@ PrefabInstance:
       propertyPath: offsetX
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 8557127893987855489, guid: 6c4070ab4df5d0747b369daebfffa4f8, type: 3}
+      propertyPath: NextLevel
+      value: Outside_LivingroomEast
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13637,6 +13645,10 @@ PrefabInstance:
     - target: {fileID: 8557127893987855489, guid: 6c4070ab4df5d0747b369daebfffa4f8, type: 3}
       propertyPath: offsetY
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557127893987855489, guid: 6c4070ab4df5d0747b369daebfffa4f8, type: 3}
+      propertyPath: NextLevel
+      value: Outside_LivingroomNorth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

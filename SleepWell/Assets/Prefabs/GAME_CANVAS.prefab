@@ -1931,6 +1931,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4172786231980461300, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1473917562965725751}
+    - targetCorrespondingSourceObject: {fileID: 4172786231980461300, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4819870876564778790}
   m_SourcePrefab: {fileID: 100100000, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
 --- !u!1 &3227517316021362648 stripped
 GameObject:
@@ -1970,6 +1973,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6bb62189cf18b45b5a81f4b2629cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4819870876564778790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227517316021362648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1f3d7aad8871b49a5fff0bc2d6d1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numIntruderOutside: 0
+  numIntruderInside: 0
+  peekRooms:
+  - bathoom
+  - kitchen
+  - workoutroom
+  - storagecloset
+  - guestbedoom
+  - garage
+  lookWindow:
+  - bedroomSouth
+  - bedroomWest
+  - livingroomNorth
+  - livingroomEast
+  intruderOutsideTime: 20
+  intruderInsideTime: 40
 --- !u!4 &6786320429663017271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408574007882304027, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}
