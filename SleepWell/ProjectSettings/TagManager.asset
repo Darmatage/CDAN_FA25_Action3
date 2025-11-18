@@ -43,5 +43,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: SideVew_Contents1
+    uniqueID: 279800539
+    locked: 0
+  - name: SideVew_Contents2
+    uniqueID: 3654805641
+    locked: 0
+  - name: SideVew_Contents3
+    uniqueID: 3259454711
+    locked: 0
+  - name: SideVew_Contents4
+    uniqueID: 4161574527
+    locked: 0
+  - name: SideView_Wall
+    uniqueID: 3957645319
+    locked: 0
   m_RenderingLayers:
   - Default

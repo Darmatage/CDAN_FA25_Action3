@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneWin.unity
     guid: 5cee3386cacbcb24e9ec8fcdb55e5c85
   - enabled: 1
-    path: Assets/Scenes/Outside_BedroomSouth.unity
+    path: Assets/Scenes/SideViews/Outside_BedroomSouth.unity
     guid: 62df3c3026feb9d43852c584c2b32347
   - enabled: 1
-    path: Assets/Scenes/Room_Bathroom.unity
+    path: Assets/Scenes/SideViews/Room_Bathroom.unity
     guid: ef700a63cc8c3404086cd56181bbbdbc
   - enabled: 1
     path: Assets/Scenes/House_Main.unity
