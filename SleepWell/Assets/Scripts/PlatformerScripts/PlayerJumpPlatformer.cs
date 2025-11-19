@@ -28,7 +28,7 @@ public class PlayerJumpPlatformer : MonoBehaviour {
       public void Jump() {
             if (jumpTimes <2){
                   jumpTimes += 1;
-                  rb.velocity = Vector2.up * jumpForce;
+                  rb.linearVelocity = Vector2.up * jumpForce;
                   // anim.SetTrigger("Jump");
                   // JumpSFX.Play();
             }  else {

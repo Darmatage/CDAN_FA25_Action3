@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go To Sleep
+  m_text: 'Go To Sleep [s]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 1386058805963814407}
   - component: {fileID: 3241917599174210579}
   m_Layer: 5
-  m_Name: WEEKDAY
+  m_Name: BG_WEEKDAY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,8 +947,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: -15}
-  m_SizeDelta: {x: 240, y: 15}
+  m_AnchoredPosition: {x: 14, y: -17.1}
+  m_SizeDelta: {x: 240, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1386058805963814407
 CanvasRenderer:
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 6350281184764518282}
   - component: {fileID: 4825831248966997277}
   m_Layer: 5
-  m_Name: GoToSleep
+  m_Name: Button_GoToSleep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,8 +1103,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 310}
+  m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &62046995233706217
 CanvasRenderer:
@@ -1665,7 +1665,7 @@ GameObject:
   - component: {fileID: 3271538398121917929}
   - component: {fileID: 583454256162790914}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)_Weekday
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1688,7 +1688,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 240, y: 15}
+  m_SizeDelta: {x: 240, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3271538398121917929
 CanvasRenderer:
@@ -1745,8 +1745,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1954,12 +1954,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconDay: {fileID: 6702708209165071437}
   iconNight: {fileID: 3640839000062729446}
-  nightLength: 180
-  dayLength: 900
+  nightLength: 90
+  dayLength: 60
   GoToSleepButton: {fileID: 5361385255437993127}
-  levelText: {fileID: 4991992728980625396}
   timerText: {fileID: 2672342990791633276}
-  isSleeping: 0
+  text_DayOfWeek: {fileID: 583454256162790914}
+  dayOfWeekBG: {fileID: 4991992728980625396}
   iconSleeping: {fileID: 8871010715075474592}
 --- !u!114 &1473917562965725751
 MonoBehaviour:
@@ -1985,22 +1985,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1f3d7aad8871b49a5fff0bc2d6d1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numIntruderOutside: 0
-  numIntruderInside: 0
-  peekRooms:
-  - bathoom
-  - kitchen
-  - workoutroom
-  - storagecloset
-  - guestbedoom
-  - garage
-  lookWindow:
-  - bedroomSouth
-  - bedroomWest
-  - livingroomNorth
-  - livingroomEast
   intruderOutsideTime: 20
   intruderInsideTime: 40
+  playerAtTheWindowDoor: 0
 --- !u!4 &6786320429663017271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5408574007882304027, guid: 0569ffd0340b44c4a9f5aa65e69a7032, type: 3}

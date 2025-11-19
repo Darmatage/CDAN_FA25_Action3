@@ -44,7 +44,7 @@ public class PlayerMovePlatformer : MonoBehaviour {
       void FixedUpdate(){
             //slow down on hills / stops sliding from velocity
             if (hMove.x == 0){
-                  rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y) ;
+                  rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x / 1.1f, rb2D.linearVelocity.y) ;
             }
       }
 
