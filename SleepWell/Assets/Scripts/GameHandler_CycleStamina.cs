@@ -121,6 +121,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		if (isDay){SwitchToNight();}
 
 		GoToSleepButton.SetActive(false);
+
 		SceneManager.LoadScene ("Dreaming");
 	}
 
@@ -128,7 +129,6 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	{
 		isSleeping = false;
 		iconSleeping.SetActive(false);
+		GoToSleepButton.SetActive(true);
 	}
-
-
 }
