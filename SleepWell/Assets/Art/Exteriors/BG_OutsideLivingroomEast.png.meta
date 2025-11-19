@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a69bbdcc04a6dd54ca089236fe5f3d29
+guid: fe1230010110f488a89e5ea824180a7c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3484472890748658484
-    second: CHAR_playerspriteSIDE_0
+      213: 8105833849441527116
+    second: BG_OutsideLivingroomEast_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CHAR_playerspriteSIDE_0
+      name: BG_OutsideLivingroomEast_0
       rect:
         serializedVersion: 2
-        x: 1681
-        y: 32
-        width: 681
-        height: 1974
+        x: 0
+        y: 0
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccc927d0e5aa4afc0800000000000000
-      internalID: -3484472890748658484
+      spriteID: c45ac4480f4bd7070800000000000000
+      internalID: 8105833849441527116
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      CHAR_playerspriteSIDE_0: -3484472890748658484
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
