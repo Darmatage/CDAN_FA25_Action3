@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 6cd3d4bf41bd64efbb6137ab24d593de
+guid: 3a4664c5ff01c4b70bcd021e9628faa9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6284328576215292511
-    second: BG_Outside_LivingRoomNorth_Layer2_0
+      213: -1675996431412898029
+    second: BG_OutsideBedroom_East_1Close_0
+  - first:
+      213: 3607264239661489822
+    second: BG_OutsideBedroom_East_1Close_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Outside_LivingRoomNorth_Layer2_0
+      name: BG_OutsideBedroom_East_1Close_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 239
-        width: 791
-        height: 481
+        y: 1
+        width: 201
+        height: 719
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a5e9daa47499c8a0800000000000000
-      internalID: -6284328576215292511
+      spriteID: 317dfcc102aadb8e0800000000000000
+      internalID: -1675996431412898029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_OutsideBedroom_East_1Close_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 70
+        width: 252
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e1effb6b39f0230800000000000000
+      internalID: 3607264239661489822
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_Outside_LivingRoomNorth_Layer2_0: -6284328576215292511
+      BG_OutsideBedroom_East_1Close_0: -1675996431412898029
+      BG_OutsideBedroom_East_1Close_1: 3607264239661489822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
