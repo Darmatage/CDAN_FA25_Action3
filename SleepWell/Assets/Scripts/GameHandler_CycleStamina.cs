@@ -24,22 +24,41 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	public TMP_Text timerText;
 	public TMP_Text text_DayOfWeek;
 
-	public static int dayOfWeek= 0;
+	public static int dayOfWeek= 1;
 	public GameObject dayOfWeekBG;
 
 	//Sleeping
 	public static bool isSleeping = false;
 	public GameObject iconSleeping;
 
+
+	//bed stuff
+	public bool atBed = false;
+	private string thisLevel;
+	private Vector2 bedReturnPos;
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
-		iconSleeping.SetActive(false);
-		iconNight.SetActive(false);
-		iconDay.SetActive(true);
-		SwitchToDay();
+		thisLevel = SceneManager.GetActiveScene().name;
+		if (GameObject.FindWithTag("Bed")!=null){
+			Transform theBed = GameObject.FindWithTag("Bed").GetComponent<Transform>();
+			bedReturnPos = new Vector2((theBed.position.x), (theBed.position.y)); 
+		}
 
-		GoToSleepButton.SetActive(false);
+		if (!isNight){
+			iconSleeping.SetActive(false);
+			iconNight.SetActive(false);
+			iconDay.SetActive(true);
+			GoToSleepButton.SetActive(false);
+		}
+		else
+		{
+			iconSleeping.SetActive(true);
+			iconNight.SetActive(true);
+			iconDay.SetActive(false);
+			GoToSleepButton.SetActive(false); // ned to be atBed -- see Update()
+		} 
 	}
 
 
@@ -55,6 +74,15 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		{
 			StartSleeping();
 		}
+
+		if (isNight && atBed){
+			GoToSleepButton.SetActive(true);
+		}
+		else
+		{
+			GoToSleepButton.SetActive(false);
+		} 
+
 	}
 
 	void FixedUpdate()
@@ -152,7 +180,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		iconNight.SetActive(true);
 		iconDay.SetActive(false);
 		dayOfWeekBG.SetActive(false);
-		GoToSleepButton.SetActive(true);
+		
 	}
 
 
@@ -165,6 +193,9 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		//if (isDay){SwitchToNight();}
 
 		GoToSleepButton.SetActive(false);
+
+		GameHandler_PlayerReturn.lastDoorPosition = bedReturnPos;
+		GameHandler_PlayerReturn.lastMap = thisLevel; 
 
 		SceneManager.LoadScene ("Dreaming");
 	}

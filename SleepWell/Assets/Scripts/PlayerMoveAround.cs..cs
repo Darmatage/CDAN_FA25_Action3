@@ -50,4 +50,21 @@ public class PlayerMoveAround : MonoBehaviour {
             theScale.x *= -1;
             transform.localScale = theScale;
       }
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "Bed")
+		{
+			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().atBed = true;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "Bed")
+		{
+			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().atBed = false;
+		}
+	}
+
 }
