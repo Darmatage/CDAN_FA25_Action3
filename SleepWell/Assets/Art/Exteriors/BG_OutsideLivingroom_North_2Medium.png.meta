@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d1b6e4ccd58f4353b6f884283479573
+guid: 283aeb278a4fe4f5dba723dfa40e7b52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1147326225516235662
-    second: BG_Outside_LivingRoomNorth_Layer4_0
+      213: -4902481930422791481
+    second: BG_OutsideLivingroom_North_2Medium_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Outside_LivingRoomNorth_Layer4_0
+      name: BG_OutsideLivingroom_North_2Medium_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1280
-        height: 720
+        y: 239
+        width: 791
+        height: 481
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2747d9e60e0e310f0800000000000000
-      internalID: -1147326225516235662
+      spriteID: 7c2d063a8a2e6fbb0800000000000000
+      internalID: -4902481930422791481
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BG_Outside_LivingRoomNorth_Layer4_0: -1147326225516235662
+      BG_OutsideLivingroom_North_2Medium_0: -4902481930422791481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
