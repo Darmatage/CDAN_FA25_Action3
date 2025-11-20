@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerMoveAround : MonoBehaviour {
 
-      //public Animator anim;
+      public Animator anim;
       //public AudioSource WalkSFX;
       private Rigidbody2D rb2D;
-      private bool FaceRight = true; // determine which way player is facing.
+      private bool FaceRight = false; // determine which way player is facing.
       public static float runSpeed = 10f;
       public float startSpeed = 10f;
       public bool isAlive = true;
 
       void Start(){
-           //anim = gameObject.GetComponentInChildren<Animator>();
+           anim = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
       }
 
@@ -24,15 +24,37 @@ public class PlayerMoveAround : MonoBehaviour {
            if (isAlive == true){
                   transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
 
-                  if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
-                  //     anim.SetBool ("Walk", true);
-                  //     if (!WalkSFX.isPlaying){
-                  //           WalkSFX.Play();
-                  //     }
+				if (Input.GetAxis("Horizontal") != 0){
+					anim.SetBool ("WalkSide", true);
+				} 
+				else{
+					anim.SetBool ("WalkSide", false);
+				}
+
+				if (Input.GetAxis("Vertical") < 0){
+					anim.SetBool ("WalkFront", true);
+				} 
+				else{
+					anim.SetBool ("WalkFront", false);
+				}
+				
+				if (Input.GetAxis("Vertical") > 0){
+					anim.SetBool ("WalkBack", true);
+				} 
+				else{
+					anim.SetBool ("WalkBack", false);
+				}
+				  
+				//walking sound effect:
+				/*  
+				if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
+                	if (!WalkSFX.isPlaying){
+                  		WalkSFX.Play();
+                  	}
                   } else {
-                  //     anim.SetBool ("Walk", false);
-                  //     WalkSFX.Stop();
+                  	WalkSFX.Stop();
                  }
+				 */
 
                   // Turning. Reverse if input is moving the Player right and Player faces left.
                  if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){

@@ -87,7 +87,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		theTimer += 0.20f;
+		theTimer += 0.05f;
 		if (theTimer >= 1)
 		{
 			theTime++;
