@@ -70,7 +70,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			StopSleeping();
 		}
 
-		if (Input.GetKeyDown("s") && !isSleeping)
+		if (Input.GetKeyDown("s") && !isSleeping && atBed)
 		{
 			StartSleeping();
 		}
