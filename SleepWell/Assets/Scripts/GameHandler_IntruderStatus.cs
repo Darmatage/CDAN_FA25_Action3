@@ -3,16 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class GameHandler_IntruderStatus : MonoBehaviour
-{
-
+public class GameHandler_IntruderStatus : MonoBehaviour{
 	public static int numIntruderOutside = 0;
 	public static int numIntruderInside = 0;
 
 //need a list of current intruders, their location
-
-	string[] peekRooms = {"bathoom", "kitchen", "workoutroom", "storagecloset", "guestbedoom", "garage"};
-	string[] lookWindow = {"Outside_BedroomSouth", "Outside_BedroomWest", "Outside_LivingroomNorth", "Outside_LivingroomEast"};
+	string[] lookWindow = {"Outside_BedroomSouth", "Outside_BedroomWest", "Outside_LivingroomEast", "Outside_LivingroomNorth"};
+	string[] peekRooms = {"Room_Bathroom", "Room_Kitchen", "Room_Workoutroom", "Room_Storagecloset", "Room_Guestbedoom", "Room_Garage"};
 
 //timers:
 	float intruderOutsideTimer = 30f;
@@ -22,9 +19,10 @@ public class GameHandler_IntruderStatus : MonoBehaviour
 	public static bool isOutside = false;
 	public static bool isInside = false;
 
-	public bool playerAtTheWindowDoor = false;
+//player dealing with intruder:
+	public bool playerAtTheWindowDoor = false; //is the player at the correct window or door?
 	string currentSceneName;
-	string intruderScene;
+	public static string intruderScene; //which scene has the intruder
 
     void Start()
     {
@@ -36,14 +34,15 @@ public class GameHandler_IntruderStatus : MonoBehaviour
 //isOutside and isInside are the intruder status
     void FixedUpdate()
     {
-		//Just for testing:
+		//temporary suystem for adding an intruder, just for testing:
+		//if (Input.GetKeyDown("i") && currentSceneName=="House_Main")
 		if (Input.GetKeyDown("i"))
 		{
 			AddIntruder();
-			//Debug.Log("1. Hit letter [i]");
+			Debug.Log("I Hit letter [i]");
 		}
 
-		//timers for active intruder when the plyer is not at the right place: 
+		//Global Intruder Timers for active intruder when the plyer is not at the right place: 
 		if (isOutside && !playerAtTheWindowDoor)
 		{
 			intruderOutsideTimer -= 0.01f;
@@ -67,11 +66,8 @@ public class GameHandler_IntruderStatus : MonoBehaviour
 		}        
     }
 
-//next, decide randomly which room, and use scenemanagement to id if we are in that room,
-//and if so, spawn an enemy
-//decide in a night that it is time to have an intruder, from day-night cycle sript
-
-
+//next, decide randomly which room:
+//decide in a night that it is time to have an intruder, from day-night cycle script
 
 	public void AddIntruder()
 	{
@@ -87,11 +83,14 @@ public class GameHandler_IntruderStatus : MonoBehaviour
 		CheckPlayerLocation();
 	}
 
+//if the player isat the correct window or door, pause the global timers and start the intruder prefab: 
 	void CheckPlayerLocation()
 	{
-		if (currentSceneName != null){
+		//Debug.Log("checking player location in " + currentSceneName);
+		if (intruderScene != null){
 			if (currentSceneName == intruderScene)
-			{
+			{	
+				Debug.Log("MATCH: current scene = " + currentSceneName + ", intruder scene = " + intruderScene);
 				playerAtTheWindowDoor = true;
 				GameObject.FindWithTag("IntruderPlace").GetComponent<Intruder_SceneSystem>().StartIntruder();
 			}
@@ -102,14 +101,15 @@ public class GameHandler_IntruderStatus : MonoBehaviour
 		}
 	}
 
-	public void CatchIntruder(string location)
+//catch the intruder, stop the global intruder timers: 
+	public void CatchIntruder()
 	{
-		if (location == "Outside"){
+		if (isOutside){
 			numIntruderOutside--;
 			isOutside = false;
 			intruderOutsideTimer = intruderOutsideTime;
 		}
-		else if (location == "Intside"){
+		else if (isInside){
 			numIntruderInside--;
 			isInside = false;
 			intruderInsideTimer = intruderInsideTime;

@@ -1,10 +1,9 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering.Universal;
 
-public class Intruder_SceneSystem : MonoBehaviour
-{
-
+public class Intruder_SceneSystem : MonoBehaviour{
 	public Transform[] path1;
 	public Transform[] path2;
 	public Transform[] path3;
@@ -20,11 +19,29 @@ public class Intruder_SceneSystem : MonoBehaviour
 	public bool isIntruder = false;
 	float intrudeScale = 1.5f;
 
+// Day / Night Lighting:
+	public Light2D lightFrontWall;
+	public Light2D lightOutside;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
+
+	void Update()
+	{
+		if (GameHandler_CycleStamina.isNight == true)
+		{
+			lightFrontWall.intensity = 0.2f;
+			lightOutside.intensity = 0.1f;
+		}
+		else
+		{
+			lightFrontWall.intensity = 1f;
+			lightOutside.intensity = 5f;
+		}
+	}
 
     /*
     void FixedUpdate()
@@ -43,7 +60,7 @@ public class Intruder_SceneSystem : MonoBehaviour
     }
 	*/
 
-//spawn an intrudr, activated by the GameHandler_IntruderStatus:
+//spawn an intruder, activated by the GameHandler_IntruderStatus:
 	public void StartIntruder()
 	{
 		int startNum = Random.Range(1,5);
@@ -57,32 +74,38 @@ public class Intruder_SceneSystem : MonoBehaviour
 		Debug.Log("intruder added to scene, located at " + thePath[0].position);
 	}
 
-	IEnumerator MoveIntruder(GameObject thisIntruder)
-	{
+	IEnumerator MoveIntruder(GameObject thisIntruder){
 		Transform intT = thisIntruder.transform;
 		SpriteRenderer intruderSprite = thisIntruder.GetComponentInChildren<SpriteRenderer>();
-
 		yield return new WaitForSeconds(timeBetweenIntrude);
 
-		intT.position = thePath[1].position;
-		intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
-		intruderSprite.sortingOrder = 25;
-		yield return new WaitForSeconds(timeBetweenIntrude);
+		if (thisIntruder != null){
+			intT.position = thePath[1].position;
+			intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
+			intruderSprite.sortingOrder = 25;
+			yield return new WaitForSeconds(timeBetweenIntrude);
+		}
 
-		intT.position = thePath[2].position;
-		intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
-		intruderSprite.sortingOrder = 35;
-		yield return new WaitForSeconds(timeBetweenIntrude);
+		if (thisIntruder != null){
+			intT.position = thePath[2].position;
+			intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
+			intruderSprite.sortingOrder = 35;
+			yield return new WaitForSeconds(timeBetweenIntrude);
+		}
 
-		intT.transform.position = thePath[3].position;
-		intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
-		intruderSprite.sortingOrder = 45;
-		yield return new WaitForSeconds(timeBetweenIntrude);
+		if (thisIntruder != null){
+			intT.transform.position = thePath[3].position;
+			intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
+			intruderSprite.sortingOrder = 45;
+			yield return new WaitForSeconds(timeBetweenIntrude);
+		}
 
 		//jump scare!
-		intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
-		GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_IntruderStatus>().IntruderFinishedStage();
-		Destroy (thisIntruder);
+		if (thisIntruder != null){
+			intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
+			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_IntruderStatus>().IntruderFinishedStage();
+			Destroy (thisIntruder);
+		}
 	}
 
 }
