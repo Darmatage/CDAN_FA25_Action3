@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8566581186208209475}
   - component: {fileID: 3169969011853877599}
   m_Layer: 0
-  m_Name: Flshlight
-  m_TagString: Untagged
+  m_Name: Flashlight
+  m_TagString: Flashlight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,6 +114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redColor: {r: 1, g: 0, b: 0, a: 1}
+  lights:
+  - {fileID: 5625351905221879615}
+  - {fileID: 7226551688934123438}
+  - {fileID: 7307029028936406857}
+  - {fileID: 7314642397462887010}
 --- !u!1 &4949542307247336221
 GameObject:
   m_ObjectHideFlags: 0

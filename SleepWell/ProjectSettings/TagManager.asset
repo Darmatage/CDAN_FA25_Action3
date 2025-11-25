@@ -9,6 +9,7 @@ TagManager:
   - IntruderPlace
   - Bed
   - Intruder
+  - Flashlight
   layers:
   - Default
   - TransparentFX

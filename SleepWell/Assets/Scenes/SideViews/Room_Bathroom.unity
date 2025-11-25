@@ -1191,7 +1191,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2689769750457815814, guid: 5d3ad72833c34cc48a41e76e0a0e3511, type: 3}
       propertyPath: m_Name
-      value: Flshlight
+      value: Flashlight
       objectReference: {fileID: 0}
     - target: {fileID: 8487519548789894689, guid: 5d3ad72833c34cc48a41e76e0a0e3511, type: 3}
       propertyPath: m_LocalPosition.x
