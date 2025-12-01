@@ -1,13 +1,18 @@
 using UnityEngine;
 
+
 public class Intruder_Character : MonoBehaviour
 {
 	public GameObject[] intruders;
 	int intruderNum = 0;
+	private AudioSource audioSource; 
+
 
     void Start()
     {
     	ChooseIntruder();
+
+		audioSource = GetComponent<AudioSource>();
     }
 
     void ChooseIntruder()
@@ -23,4 +28,18 @@ public class Intruder_Character : MonoBehaviour
 				}
 		}
     }
+
+	void OnMouseEnter()
+	{
+		if (audioSource != null && !audioSource.isPlaying)
+		{
+			audioSource.Play();
+		}
+	}
+
+
+
+
+
+
 }
