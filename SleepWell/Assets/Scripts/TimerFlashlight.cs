@@ -9,6 +9,7 @@ public class TimerFlashlight : MonoBehaviour {
        public float timerMax = 10f;       //set the number of seconds here
        private static float theTimer = 0f;
        public bool doTheThing = false;
+	   	   
 
        public Image timerDisplay;
 
@@ -40,6 +41,8 @@ public class TimerFlashlight : MonoBehaviour {
 			flashlightButton.SetActive(false);
 		}
 	}
+
+	
 
       void Update(){
             //test functionality. Normally set=true by external script.

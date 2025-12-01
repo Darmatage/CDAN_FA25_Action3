@@ -224,6 +224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerMax: 10
   doTheThing: 0
+  spriteRenderer: {fileID: 0}
+  newSprite: {fileID: -6423010089538165012, guid: 359bc40db73ef8343b0fc9724514ca55, type: 3}
   timerDisplay: {fileID: 4185600930830326298}
   flashlightButton: {fileID: 6555717809180231106}
 --- !u!1 &7519357021361476360
