@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour {
 
       //public Animator anim;
-      public Rigidbody2D rb;
+      Rigidbody2D rb;
       public float jumpForce = 6f;
       public LayerMask groundLayer;
       public LayerMask enemyLayer;
@@ -29,6 +29,7 @@ public class PlayerJump : MonoBehaviour {
             if (jumpTimes <2){
                   jumpTimes += 1;
                   rb.linearVelocity = Vector2.up * jumpForce;
+				  GameObject.FindWithTag("MainCamera").GetComponent<CameraFollow>().CameraCenter();
                   // anim.SetTrigger("Jump");
                   // JumpSFX.Play();
             }  else {

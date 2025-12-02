@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tilemap_MultiMap_4x4_1024 (2)_0: -2449493610435965684
+      Tilemap_MultiMap_4x4_1024 (2)_1: 1308193163257664547
+      Tilemap_MultiMap_4x4_1024 (2)_2: -4951658662562874716
+      Tilemap_MultiMap_4x4_1024 (2)_3: -869283848476645379
+      Tilemap_MultiMap_4x4_1024 (2)_4: 3125619257377655740
+      Tilemap_MultiMap_4x4_1024 (2)_5: 3390081005179402561
+      Tilemap_MultiMap_4x4_1024 (2)_6: -3533590777079094235
+      Tilemap_MultiMap_4x4_1024 (2)_7: 6352433127714063224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

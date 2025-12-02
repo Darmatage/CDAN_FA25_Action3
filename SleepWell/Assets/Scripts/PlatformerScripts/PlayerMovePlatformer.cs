@@ -6,11 +6,11 @@ public class PlayerMovePlatformer : MonoBehaviour {
 
       //public Animator animator;
       public Rigidbody2D rb2D;
-      private bool FaceRight = true; // determine which way player is facing.
+      private bool FaceRight = false; // determine which way player is facing.
       public static float runSpeed = 10f;
       public float startSpeed = 10f;
       public bool isAlive = true;
-      public AudioSource WalkSFX;
+      //public AudioSource WalkSFX;
       private Vector3 hMove;
 
       void Start(){
@@ -26,12 +26,14 @@ public class PlayerMovePlatformer : MonoBehaviour {
 
                   if (Input.GetAxis("Horizontal") != 0){
                   //       animator.SetBool ("Walk", true);
-                         if (!WalkSFX.isPlaying){
+                        /*
+						if (!WalkSFX.isPlaying){
                                WalkSFX.Play();
                         }
+						*/
                   } else {
                   //      animator.SetBool ("Walk", false);
-                        WalkSFX.Stop();
+                        //WalkSFX.Stop();
                   }
 
                   // Turning: Reverse if input is moving the Player right and Player faces left
