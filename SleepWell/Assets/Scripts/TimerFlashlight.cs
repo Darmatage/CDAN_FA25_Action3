@@ -19,6 +19,9 @@ public class TimerFlashlight : MonoBehaviour {
 	   private FlashlightControl flashlight;
 	   public GameObject flashlightButton;
 
+		public GameObject flashlightIcon_active;
+		public GameObject flashlightIcon_empty;
+
 	void Start(){
            
 		//check if this is a flashlight-using scene:
@@ -64,7 +67,15 @@ public class TimerFlashlight : MonoBehaviour {
                         doTheThing = false;
 						isOn = false;
 						flashlight.hasBatteryOn = false;
+
+						flashlightIcon_active.SetActive(false);
+						flashlightIcon_empty.SetActive(true);
                     }
+					else
+					{
+						flashlightIcon_active.SetActive(true);
+						flashlightIcon_empty.SetActive(false);
+					} 
               }
        }
 
@@ -88,5 +99,7 @@ public class TimerFlashlight : MonoBehaviour {
 	{
 		theTimer = timerMax;
 		timerDisplay.fillAmount = theTimer / timerMax;
+		flashlightIcon_active.SetActive(true);
+		flashlightIcon_empty.SetActive(false);
 	}
 }
