@@ -7,7 +7,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	public static int numIntruderOutside = 0;
 	public static int numIntruderInside = 0;
 
-//need a list of current intruders, their location
+//need a list of current intruder, their location
 	string[] lookWindow = {"Outside_BedroomSouth", "Outside_BedroomWest", "Outside_LivingroomEast", "Outside_LivingroomNorth"};
 	string[] peekRooms = {"Room_Bathroom", "Room_Kitchen", "Room_Workoutroom", "Room_Storagecloset", "Room_Guestbedoom", "Room_Garage"};
 
@@ -19,6 +19,8 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	public static bool isOutside = false;
 	public static bool isInside = false;
 
+	
+
 //player dealing with intruder:
 	public bool playerAtTheWindowDoor = false; //is the player at the correct window or door?
 	string currentSceneName;
@@ -28,19 +30,23 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
     {
 		currentSceneName = SceneManager.GetActiveScene().name;
 		CheckPlayerLocation();
+
 	}
 
 //Timers for palyer doom OUTSIDE of pek-a-boo system at doors and wndows,
 //isOutside and isInside are the intruder status
     void FixedUpdate()
     {
-		//temporary suystem for adding an intruder, just for testing:
+		//keyboard suystem for adding an intruder, just for testing:
 		//if (Input.GetKeyDown("i") && currentSceneName=="House_Main")
 		if (Input.GetKeyDown("i"))
 		{
 			AddIntruder();
 			Debug.Log("I Hit letter [i]");
 		}
+		//NOTE; GmeHandler_CyleStamina DOES have a way to truigger the intruder in the first hlf ofach night 
+	
+
 
 		//Global Intruder Timers for active intruder when the plyer is not at the right place: 
 		if (isOutside && !playerAtTheWindowDoor)
@@ -98,6 +104,10 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 			{
 				playerAtTheWindowDoor = false;
 			}
+		}
+		else
+		{
+			playerAtTheWindowDoor = false;
 		}
 	}
 

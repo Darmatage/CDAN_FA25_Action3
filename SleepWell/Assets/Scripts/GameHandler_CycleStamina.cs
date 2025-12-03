@@ -37,6 +37,10 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	private string thisLevel;
 	private Vector2 bedReturnPos;
 
+	//intruder stuff:
+	private int intruderSpawnTime;
+	private bool hasIntruder = false;
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
@@ -103,7 +107,14 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			nightTime = (theTime /(nightLength/12));
 		}
 
+		//trigger an intruder during the night!
+		if (!hasIntruder && isNight && theTime >= intruderSpawnTime)
+		{
+			hasIntruder = true;
+			GetComponent<GameHandler_IntruderStatus>().AddIntruder();
+		}
 		
+		//swithc day and night:
 		if (isNight && theTime >= nightLength)
 		{
 			SwitchToDay();
@@ -172,6 +183,8 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		if (isSleeping){
 			StopSleeping();
 		}
+
+		hasIntruder = false;
 	}
 
 	void SwitchToNight()
@@ -180,6 +193,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		iconNight.SetActive(true);
 		iconDay.SetActive(false);
 		dayOfWeekBG.SetActive(false);
+		intruderSpawnTime = Random.Range(0, nightLength/2);
 		
 	}
 
