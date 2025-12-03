@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ac8b0cf1886da4243b7aa2d1746d2abf
+guid: 8a336cbc8e889e24b85ab83c7b3b9096
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9011213135108779423
-    second: Untitled_Artwork (9)_0
+      213: -5896009343236504078
+    second: RoomPeek_Bedroom_2_Bed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork (9)_0
+      name: RoomPeek_Bedroom_2_Bed_0
       rect:
         serializedVersion: 2
-        x: 356
-        y: 64
-        width: 137
-        height: 269
+        x: 229
+        y: 92
+        width: 263
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9d2e795a924e0d70800000000000000
-      internalID: 9011213135108779423
+      spriteID: 2f50100adba2d2ea0800000000000000
+      internalID: -5896009343236504078
       vertices: []
       indices: 
       edges: []
