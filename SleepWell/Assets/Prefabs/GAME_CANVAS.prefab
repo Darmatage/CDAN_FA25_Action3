@@ -1157,7 +1157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2003,6 +2003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1246128704626211685}
     m_Modifications:
+    - target: {fileID: 5809415778612997820, guid: a83c3d1c680fd3f48b2916c34a0ccc3b, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6990291257022450653, guid: a83c3d1c680fd3f48b2916c34a0ccc3b, type: 3}
       propertyPath: m_Name
       value: FlashlightTimer
