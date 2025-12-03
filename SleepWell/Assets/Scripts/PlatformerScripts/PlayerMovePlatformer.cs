@@ -5,13 +5,16 @@ using UnityEngine;
 public class PlayerMovePlatformer : MonoBehaviour {
 
       //public Animator animator;
-      public Rigidbody2D rb2D;
+      private Rigidbody2D rb2D;
       private bool FaceRight = false; // determine which way player is facing.
       public static float runSpeed = 10f;
       public float startSpeed = 10f;
       public bool isAlive = true;
       //public AudioSource WalkSFX;
       private Vector3 hMove;
+
+	  //fall death:
+	  public Transform fallDeathPoint;
 
       void Start(){
            //animator = gameObject.GetComponentInChildren<Animator>();
@@ -48,6 +51,13 @@ public class PlayerMovePlatformer : MonoBehaviour {
             if (hMove.x == 0){
                   rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x / 1.1f, rb2D.linearVelocity.y) ;
             }
+
+		if (transform.position.y <= fallDeathPoint.position.y)
+		{
+			//kill the plyer if they fall:
+			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerGetHurt>().PlayerGetHurt(100);
+		}
+
       }
 
       private void playerTurn(){

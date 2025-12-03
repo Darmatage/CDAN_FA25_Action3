@@ -200,7 +200,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		SceneManager.LoadScene ("Dreaming");
 	}
 
-	void StopSleeping()
+	public void StopSleeping()
 	{
 		isSleeping = false;
 		iconSleeping.SetActive(false);
