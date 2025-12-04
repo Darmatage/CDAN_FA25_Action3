@@ -10,6 +10,7 @@ TagManager:
   - Bed
   - Intruder
   - Flashlight
+  - Sheep
   layers:
   - Default
   - TransparentFX
