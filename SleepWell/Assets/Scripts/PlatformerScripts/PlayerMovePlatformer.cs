@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovePlatformer : MonoBehaviour {
 
-      //public Animator animator;
+      public Animator animator;
       private Rigidbody2D rb2D;
       private bool FaceRight = false; // determine which way player is facing.
       public static float runSpeed = 10f;
@@ -17,7 +17,7 @@ public class PlayerMovePlatformer : MonoBehaviour {
 	  public Transform fallDeathPoint;
 
       void Start(){
-           //animator = gameObject.GetComponentInChildren<Animator>();
+           animator = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
       }
 
