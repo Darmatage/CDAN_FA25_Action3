@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: a92b4306e028f483a9d77d1a0c436dd2
+guid: d2bbcb9bd53d74733b7ce4d74468949d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1946800004110854808
-    second: DECORATION_Livingroom_Furniture_0
+      213: -219526743852940151
+    second: LivingroomFurnitureNIGHT_0
   - first:
-      213: 829554339976532491
-    second: DECORATION_Livingroom_Furniture_1
+      213: 8405337913245941229
+    second: LivingroomFurnitureNIGHT_1
   - first:
-      213: 6546339858041663457
-    second: DECORATION_Livingroom_Furniture_2
+      213: -172278849539980682
+    second: LivingroomFurnitureNIGHT_2
   - first:
-      213: 1751193240475245752
-    second: DECORATION_Livingroom_Furniture_3
+      213: -7824048136355324194
+    second: LivingroomFurnitureNIGHT_3
+  - first:
+      213: -3414418680863251536
+    second: LivingroomFurnitureNIGHT_4
+  - first:
+      213: -8826900011486313555
+    second: LivingroomFurnitureNIGHT_5
+  - first:
+      213: 1475783197902908429
+    second: LivingroomFurnitureNIGHT_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,24 +114,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DECORATION_Livingroom_Furniture_0
+      name: LivingroomFurnitureNIGHT_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8655e3af5b39bf4e0800000000000000
-      internalID: -1946800004110854808
+      spriteID: 98482fde69514fcf0800000000000000
+      internalID: -219526743852940151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DECORATION_Livingroom_Furniture_1
+      name: LivingroomFurnitureNIGHT_1
       rect:
         serializedVersion: 2
         x: 203
@@ -159,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b025f2ce64b238b00800000000000000
-      internalID: 829554339976532491
+      spriteID: dedb5287c42c5a470800000000000000
+      internalID: 8405337913245941229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DECORATION_Livingroom_Furniture_2
+      name: LivingroomFurnitureNIGHT_2
       rect:
         serializedVersion: 2
         x: 5
@@ -181,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1efed89ba6549da50800000000000000
-      internalID: 6546339858041663457
+      spriteID: 6724bd29c41fb9df0800000000000000
+      internalID: -172278849539980682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DECORATION_Livingroom_Furniture_3
+      name: LivingroomFurnitureNIGHT_3
       rect:
         serializedVersion: 2
         x: 134
@@ -203,8 +199,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bc979759fc7d4810800000000000000
-      internalID: 1751193240475245752
+      spriteID: ededbfe6ca56b6390800000000000000
+      internalID: -7824048136355324194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingroomFurnitureNIGHT_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b320b4dc4c8d90d0800000000000000
+      internalID: -3414418680863251536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingroomFurnitureNIGHT_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3877bd43d808580800000000000000
+      internalID: -8826900011486313555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingroomFurnitureNIGHT_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 4
+        width: 128
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c2e7cdff80b7410800000000000000
+      internalID: 1475783197902908429
       vertices: []
       indices: 
       edges: []
@@ -222,11 +284,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DECORATION_Livingroom_Furniture_0: -1946800004110854808
-      DECORATION_Livingroom_Furniture_1: 829554339976532491
-      DECORATION_Livingroom_Furniture_2: 6546339858041663457
-      DECORATION_Livingroom_Furniture_3: 1751193240475245752
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
