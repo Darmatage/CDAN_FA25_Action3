@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 244694414}
   - component: {fileID: 244694415}
   m_Layer: 5
-  m_Name: Text (TMP)_Title
+  m_Name: logo (TMP)_Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PAUSEMENU_HANDLER
       objectReference: {fileID: 0}
+    - target: {fileID: 2402028074379579684, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2552655070617869480, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1183,6 +1187,10 @@ PrefabInstance:
     - target: {fileID: 4707357532608415666, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516984014333397157, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

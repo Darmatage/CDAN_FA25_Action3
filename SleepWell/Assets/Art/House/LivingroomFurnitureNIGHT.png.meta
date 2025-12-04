@@ -114,6 +114,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -284,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LivingroomFurnitureNIGHT_0: -219526743852940151
+      LivingroomFurnitureNIGHT_1: 8405337913245941229
+      LivingroomFurnitureNIGHT_2: -172278849539980682
+      LivingroomFurnitureNIGHT_3: -7824048136355324194
+      LivingroomFurnitureNIGHT_4: -3414418680863251536
+      LivingroomFurnitureNIGHT_5: -8826900011486313555
+      LivingroomFurnitureNIGHT_6: 1475783197902908429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
