@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RoomPeek_GymEliptical_0: -671739432602484805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

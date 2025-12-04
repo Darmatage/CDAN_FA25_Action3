@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RoomPeek_GymBench_0: 1027070409070086333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

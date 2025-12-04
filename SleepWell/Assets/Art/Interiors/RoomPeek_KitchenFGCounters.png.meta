@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RoomPeek_KitchenFGCounters_0: 7813634819509306735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

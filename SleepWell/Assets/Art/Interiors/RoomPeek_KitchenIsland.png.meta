@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RoomPeek_KitchenIsland_0: 5661728078004273917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

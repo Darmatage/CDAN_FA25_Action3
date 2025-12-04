@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RoomPeek_ClosetBoxes_0: 699356971244287382
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
