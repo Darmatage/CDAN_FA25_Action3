@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2b297650dd4ce4bbd223a83c1005a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
+  startSpeed: 8
   isAlive: 1
   fallDeathPoint: {fileID: 0}
 --- !u!114 &8650158528750042001
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419966b6faf44ac48b2d3aec68dd392b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 6
+  jumpForce: 10
   groundLayer:
     serializedVersion: 2
     m_Bits: 64

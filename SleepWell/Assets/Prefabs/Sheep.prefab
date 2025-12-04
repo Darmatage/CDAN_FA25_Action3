@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 390875199885567609}
   - component: {fileID: 3508499738549556834}
   - component: {fileID: 150847623962023560}
+  - component: {fileID: 1847823079872120910}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Sheep
@@ -64,7 +65,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -107,6 +108,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1847823079872120910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3642369247257175943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd713302cfefbe44d97b944e1800172c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6088080113042212720
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 6088080113042212720}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
