@@ -5,14 +5,14 @@ public class Intruder_Character : MonoBehaviour
 {
 	public GameObject[] intruders;
 	int intruderNum = 0;
-	private AudioSource audioSource; 
+	//private AudioSource intruderDiscoveredSFX; 
 
 
     void Start()
     {
     	ChooseIntruder();
 
-		audioSource = GetComponent<AudioSource>();
+		//intruderDiscoveredSFX = GetComponent<AudioSource>();
     }
 
     void ChooseIntruder()
@@ -28,15 +28,15 @@ public class Intruder_Character : MonoBehaviour
 				}
 		}
     }
-
+/*
 	void OnMouseEnter()
 	{
 		if (audioSource != null && !audioSource.isPlaying)
 		{
-			audioSource.Play();
+			intruderDiscoveredSFX.Play();
 		}
 	}
-
+*/
 
 
 

@@ -19,7 +19,8 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	public static bool isOutside = false;
 	public static bool isInside = false;
 
-	
+	public AudioSource intruderSpawnSFX;
+	public AudioSource intruderEnteredSFX;
 
 //player dealing with intruder:
 	public bool playerAtTheWindowDoor = false; //is the player at the correct window or door?
@@ -59,6 +60,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 				isInside = true;
 				numIntruderOutside--;
 				numIntruderInside++;
+				intruderEnteredSFX.Play();
 			}
 		}
 		else if (isInside && !playerAtTheWindowDoor){
@@ -79,6 +81,8 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	{
 		numIntruderOutside++;
 		isOutside = true;
+
+		intruderSpawnSFX.Play();
 
 		//set start location of intuder:
 		int intruderLocationNum = Random.Range(0, lookWindow.Length);

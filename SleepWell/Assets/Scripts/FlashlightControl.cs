@@ -15,6 +15,10 @@ public class FlashlightControl : MonoBehaviour
 //get value from the UI battery control:
 	public bool hasBatteryOn = false;
 
+	public AudioSource discoveredSFX;
+
+	bool flashLightOn = false;
+
 	void Start()
 	{
 		//capture the value of the intensity for each light
@@ -22,6 +26,8 @@ public class FlashlightControl : MonoBehaviour
 		{
 			lightFullIntensity[i] = lights[i].intensity;
 		}
+
+		FlashLightOff();
 	}
 
 	void Update ()
@@ -42,12 +48,14 @@ public class FlashlightControl : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("flahlight hit: " + other.gameObject.name);
-		if (other.gameObject.tag == "Intruder")
+		if (other.gameObject.tag == "Intruder" && flashLightOn)
 		{
+			Debug.Log("flahlight hit: " + other.gameObject.name);
 			other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
 			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_IntruderStatus>().CatchIntruder();
+			discoveredSFX.Play();
 			StartCoroutine(RemoveIntruder(other.gameObject));
+
 		}
 	}
 
@@ -60,6 +68,7 @@ public class FlashlightControl : MonoBehaviour
 
 	public void FlashLightOn()
 	{
+		flashLightOn = true;
 		Debug.Log("turned on flashlight");
 		GetComponent<Collider2D>().enabled = true;
 		for (int i = 0; i < lights.Length; i++)
@@ -69,6 +78,7 @@ public class FlashlightControl : MonoBehaviour
 	}
 	public void FlashLightOff()
 	{
+		flashLightOn = false;
 		Debug.Log("turned off flashlight");
 		GetComponent<Collider2D>().enabled = false;
 		for (int i = 0; i < lights.Length; i++)
