@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6a57459d75a34818bf4adb4c3979fb4
+guid: ea2681451f2274ac0b2dd4cbe76531a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3387696934014217889
-    second: MenuQuit_0
+      213: -6980106149008492115
+    second: Pause_Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MenuQuit_0
+      name: Pause_Icon_0
       rect:
         serializedVersion: 2
-        x: 429
-        y: 288
-        width: 432
-        height: 152
+        x: 337
+        y: 126
+        width: 636
+        height: 515
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1aee896a964830f20800000000000000
-      internalID: 3387696934014217889
+      spriteID: da934dd807ea12f90800000000000000
+      internalID: -6980106149008492115
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MenuQuit_0: 3387696934014217889
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

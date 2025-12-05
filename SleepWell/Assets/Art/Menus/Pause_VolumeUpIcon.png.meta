@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7cd62251b8c9b48b4b400d2301ffab46
+guid: bf314fac9098845cf8af23d0588bceed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7781202394294830402
-    second: Untitled_Artwork 2_0
+      213: -2344364280529672065
+    second: Pause_VolumeUpIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork 2_0
+      name: Pause_VolumeUpIcon_0
       rect:
         serializedVersion: 2
-        x: 429
-        y: 289
-        width: 432
-        height: 152
+        x: 596
+        y: 316
+        width: 88
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 245cc5dd9526cfb60800000000000000
-      internalID: 7781202394294830402
+      spriteID: f782aea9b15277fd0800000000000000
+      internalID: -2344364280529672065
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork 2_0: 7781202394294830402
+      Pause_VolumeUpIcon_0: -2344364280529672065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
