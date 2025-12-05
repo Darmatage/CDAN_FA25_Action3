@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0a1075d95a884400f8120a33d2f53137
+guid: 08360e900f40b4bcaac954d938069a6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4838450567365997892
-    second: MenuRestart_0
+      213: -5624864037141468477
+    second: MenuButtonWood_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MenuRestart_0
+      name: MenuButtonWood_0
       rect:
         serializedVersion: 2
-        x: 429
-        y: 289
-        width: 432
-        height: 152
+        x: 5
+        y: 108
+        width: 1261
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbaccdc18de5adcb0800000000000000
-      internalID: -4838450567365997892
+      spriteID: 3ca2054c5f770f1b0800000000000000
+      internalID: -5624864037141468477
       vertices: []
       indices: 
       edges: []
