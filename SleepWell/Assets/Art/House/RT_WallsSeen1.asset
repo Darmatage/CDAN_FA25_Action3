@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: RT_WallsSeen1
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -1512168852205712278, guid: 6d761881def37204daa90d96343d67a0, type: 3}
+  m_DefaultSprite: {fileID: 131374009670459794, guid: 52887a5d104c546d9a0243b79c020243, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 0
     m_Sprites:
-    - {fileID: -1512168852205712278, guid: 6d761881def37204daa90d96343d67a0, type: 3}
+    - {fileID: 131374009670459794, guid: 52887a5d104c546d9a0243b79c020243, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 1
     m_Sprites:
-    - {fileID: 3558490779059615767, guid: 6d761881def37204daa90d96343d67a0, type: 3}
+    - {fileID: 554127405999859885, guid: 52887a5d104c546d9a0243b79c020243, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 2
     m_Sprites:
-    - {fileID: -441333645, guid: 6d761881def37204daa90d96343d67a0, type: 3}
+    - {fileID: 1763298737, guid: 52887a5d104c546d9a0243b79c020243, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
