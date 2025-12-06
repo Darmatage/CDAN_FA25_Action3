@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: 78b8dfff4616bc64aaa23fd93ce6ef56
+guid: 662464960e50e204995c7fe3bd103638
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6716931639938975814
-    second: Accountant Game BG_0
+      213: -580066610428688485
+    second: BossChomp_Anim_0
+  - first:
+      213: -4976624751317730783
+    second: BossChomp_Anim_1
+  - first:
+      213: -1585561941857612715
+    second: BossChomp_Anim_2
+  - first:
+      213: 6464570500440529403
+    second: BossChomp_Anim_3
+  - first:
+      213: 1222605173939160625
+    second: BossChomp_Anim_4
+  - first:
+      213: -4198775988249692317
+    second: BossChomp_Anim_5
+  - first:
+      213: 7527000481867365593
+    second: BossChomp_Anim_6
+  - first:
+      213: 6497652358743802450
+    second: BossChomp_Anim_7
+  - first:
+      213: 7663280566832792882
+    second: BossChomp_Anim_8
+  - first:
+      213: -8194799504113649639
+    second: BossChomp_Anim_9
+  - first:
+      213: 711627802240633657
+    second: BossChomp_Anim_10
+  - first:
+      213: -4463557388854015054
+    second: BossChomp_Anim_11
+  - first:
+      213: -7051908448368390849
+    second: BossChomp_Anim_12
+  - first:
+      213: -3206347237829142149
+    second: BossChomp_Anim_13
+  - first:
+      213: 355723189233222379
+    second: BossChomp_Anim_14
+  - first:
+      213: 8411624842932813314
+    second: BossChomp_Anim_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,353 +145,353 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Accountant Game BG_0
+      name: BossChomp_Anim_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 768
-        width: 256
-        height: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ef7e0fad0d6d92c46ab02fbe6794f36c
-      internalID: 385657422
+      spriteID: b97455bbd7033f7f0800000000000000
+      internalID: -580066610428688485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_1
+      name: BossChomp_Anim_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3b0815accf9caa9448811f730a6d6cf3
-      internalID: 722668623
+      spriteID: 12a3a4de72a7feab0800000000000000
+      internalID: -4976624751317730783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_2
+      name: BossChomp_Anim_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4a8f30158bd3c1442b3de04f55dc6c12
-      internalID: 828126883
+      spriteID: 55cc23680d3fef9e0800000000000000
+      internalID: -1585561941857612715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_3
+      name: BossChomp_Anim_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b3edecffe03db084fa9e95daf96afb4c
-      internalID: 376476917
+      spriteID: bf91a309e94c6b950800000000000000
+      internalID: 6464570500440529403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99c49417872b7984181aa5b417f1f671
-      internalID: 896511561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Accountant Game BG_5
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be7e3f545ea33974dad7a36544fe738f
-      internalID: 1981707815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Accountant Game BG_6
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f0d6936c10eb3a4e87a3318545a1603
-      internalID: 988480292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Accountant Game BG_7
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f334256777412ba41a481cbe9a27f6cd
-      internalID: -741956488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Accountant Game BG_8
+      name: BossChomp_Anim_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 256
-        height: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b86cd8cc74885464ea843df4e2160eff
-      internalID: 19217376
+      spriteID: 136c2359de097f010800000000000000
+      internalID: 1222605173939160625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_9
+      name: BossChomp_Anim_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 094c78030f524654688c433dd512126d
-      internalID: -610695629
+      spriteID: 367ffe81c73fab5c0800000000000000
+      internalID: -4198775988249692317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_10
+      name: BossChomp_Anim_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9a6a4e0129c251c4999804ac07cb28c4
-      internalID: -120041302
+      spriteID: 9dcf5e9fe07457860800000000000000
+      internalID: 7527000481867365593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_11
+      name: BossChomp_Anim_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cd843c2ced4fb624480deb1e85358d52
-      internalID: 1264425006
+      spriteID: 25247ece46c4c2a50800000000000000
+      internalID: 6497652358743802450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_12
+      name: BossChomp_Anim_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2350930e211795a60800000000000000
+      internalID: 7663280566832792882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossChomp_Anim_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91832c7d449364e80800000000000000
+      internalID: -8194799504113649639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossChomp_Anim_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b48dc37b530e900800000000000000
+      internalID: 711627802240633657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossChomp_Anim_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb49ca24324e02c0800000000000000
+      internalID: -4463557388854015054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossChomp_Anim_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 10d99ad186601d144ae4fb963b5f43ee
-      internalID: -524923150
+      spriteID: f3d0d6af0a6922e90800000000000000
+      internalID: -7051908448368390849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_13
+      name: BossChomp_Anim_13
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 82578459a921fc346be6fc0e68c907dc
-      internalID: 1348008618
+      spriteID: b7993a6dc24c083d0800000000000000
+      internalID: -3206347237829142149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_14
+      name: BossChomp_Anim_14
       rect:
         serializedVersion: 2
-        x: 512
+        x: 128
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 94a64bf9a3945f94c89453f45b46370c
-      internalID: 1785726390
+      spriteID: be28d9c1b58cfe400800000000000000
+      internalID: 355723189233222379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Accountant Game BG_15
+      name: BossChomp_Anim_15
       rect:
         serializedVersion: 2
-        x: 768
+        x: 192
         y: 0
-        width: 256
-        height: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5fafb0409aae37842a3b98a0a41a6bf8
-      internalID: -1582103720
+      spriteID: 20e7cda5a381cb470800000000000000
+      internalID: 8411624842932813314
       vertices: []
       indices: 
       edges: []
@@ -455,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 88ac496a0c1fa8144888788eaf9c9844
+    spriteID: 63fc8fe54a78add4b928ff56c8dd34cc
     internalID: 0
     vertices: []
     indices: 
@@ -465,22 +510,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Accountant Game BG_0: 385657422
-      Accountant Game BG_1: 722668623
-      Accountant Game BG_10: -120041302
-      Accountant Game BG_11: 1264425006
-      Accountant Game BG_12: -524923150
-      Accountant Game BG_13: 1348008618
-      Accountant Game BG_14: 1785726390
-      Accountant Game BG_15: -1582103720
-      Accountant Game BG_2: 828126883
-      Accountant Game BG_3: 376476917
-      Accountant Game BG_4: 896511561
-      Accountant Game BG_5: 1981707815
-      Accountant Game BG_6: 988480292
-      Accountant Game BG_7: -741956488
-      Accountant Game BG_8: 19217376
-      Accountant Game BG_9: -610695629
+      BossChomp_Anim_0: -580066610428688485
+      BossChomp_Anim_1: -4976624751317730783
+      BossChomp_Anim_10: 711627802240633657
+      BossChomp_Anim_11: -4463557388854015054
+      BossChomp_Anim_12: -7051908448368390849
+      BossChomp_Anim_13: -3206347237829142149
+      BossChomp_Anim_14: 355723189233222379
+      BossChomp_Anim_15: 8411624842932813314
+      BossChomp_Anim_2: -1585561941857612715
+      BossChomp_Anim_3: 6464570500440529403
+      BossChomp_Anim_4: 1222605173939160625
+      BossChomp_Anim_5: -4198775988249692317
+      BossChomp_Anim_6: 7527000481867365593
+      BossChomp_Anim_7: 6497652358743802450
+      BossChomp_Anim_8: 7663280566832792882
+      BossChomp_Anim_9: -8194799504113649639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

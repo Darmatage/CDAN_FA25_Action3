@@ -76,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,10 +142,10 @@ TextureImporter:
       name: Reusable_PlatformArt_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 207
-        width: 31
-        height: 33
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: Reusable_PlatformArt_1
       rect:
         serializedVersion: 2
-        x: 85
-        y: 208
-        width: 32
-        height: 32
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,10 +186,10 @@ TextureImporter:
       name: Reusable_PlatformArt_2
       rect:
         serializedVersion: 2
-        x: 140
-        y: 209
-        width: 35
-        height: 34
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: Reusable_PlatformArt_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 207
-        width: 31
-        height: 32
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: Reusable_PlatformArt_4
       rect:
         serializedVersion: 2
-        x: 15
-        y: 127
-        width: 162
-        height: 41
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: Reusable_PlatformArt_5
       rect:
         serializedVersion: 2
-        x: 210
-        y: 143
-        width: 29
-        height: 27
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: Reusable_PlatformArt_6
       rect:
         serializedVersion: 2
-        x: 12
-        y: 82
-        width: 28
-        height: 28
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +296,10 @@ TextureImporter:
       name: Reusable_PlatformArt_7
       rect:
         serializedVersion: 2
-        x: 87
-        y: 84
-        width: 27
-        height: 28
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: Reusable_PlatformArt_8
       rect:
         serializedVersion: 2
-        x: 146
-        y: 82
-        width: 26
-        height: 26
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +340,10 @@ TextureImporter:
       name: Reusable_PlatformArt_9
       rect:
         serializedVersion: 2
-        x: 210
-        y: 79
-        width: 29
-        height: 29
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: Reusable_PlatformArt_10
       rect:
         serializedVersion: 2
-        x: 15
-        y: 14
-        width: 29
-        height: 29
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,10 +384,10 @@ TextureImporter:
       name: Reusable_PlatformArt_11
       rect:
         serializedVersion: 2
-        x: 63
-        y: 2
-        width: 66
-        height: 38
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -406,10 +406,10 @@ TextureImporter:
       name: Reusable_PlatformArt_12
       rect:
         serializedVersion: 2
-        x: 147
-        y: 17
-        width: 28
-        height: 28
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: Reusable_PlatformArt_13
       rect:
         serializedVersion: 2
-        x: 212
-        y: 14
-        width: 29
-        height: 30
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,11 +446,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Reusable_PlatformArt_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e6e4d9398164d4fa235acf3475dd23
+      internalID: -759628431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reusable_PlatformArt_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b54a419912518409d3294374b240c2
+      internalID: -196671759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0e7cff9a4fb6f354e8a570933affb1b0
     internalID: 0
     vertices: []
     indices: 
@@ -459,7 +503,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Reusable_PlatformArt_0: -7704661836111836433
+      Reusable_PlatformArt_1: -3020346236781061142
+      Reusable_PlatformArt_10: -6732108915112497181
+      Reusable_PlatformArt_11: 2988407195115930197
+      Reusable_PlatformArt_12: -1695678256485838524
+      Reusable_PlatformArt_13: 440975946376625273
+      Reusable_PlatformArt_14: -759628431
+      Reusable_PlatformArt_15: -196671759
+      Reusable_PlatformArt_2: 6565636076364294179
+      Reusable_PlatformArt_3: 8167586173463475633
+      Reusable_PlatformArt_4: -9030715005453592604
+      Reusable_PlatformArt_5: -3048012898623232953
+      Reusable_PlatformArt_6: -1529505127321159325
+      Reusable_PlatformArt_7: -5251863696899799633
+      Reusable_PlatformArt_8: -2294038333915122227
+      Reusable_PlatformArt_9: -8369166484246495409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
