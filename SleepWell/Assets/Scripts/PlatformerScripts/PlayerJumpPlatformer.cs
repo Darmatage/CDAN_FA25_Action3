@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour {
 
-      //public Animator anim;
+      public Animator anim;
       Rigidbody2D rb;
       public float jumpForce = 6f;
       public LayerMask groundLayer;
@@ -15,7 +15,7 @@ public class PlayerJump : MonoBehaviour {
       //public AudioSource JumpSFX;
 
       void Start(){
-            //anim = gameObject.GetComponentInChildren<Animator>();
+            anim = gameObject.GetComponentInChildren<Animator>();
             rb = GetComponent<Rigidbody2D>();
       }
 
@@ -30,7 +30,7 @@ public class PlayerJump : MonoBehaviour {
                   jumpTimes += 1;
                   rb.linearVelocity = Vector2.up * jumpForce;
 				  GameObject.FindWithTag("MainCamera").GetComponent<CameraFollow>().CameraCenter();
-                  // anim.SetTrigger("Jump");
+                   anim.SetTrigger("Jump");
                   // JumpSFX.Play();
             }  else {
                   canJump = false;

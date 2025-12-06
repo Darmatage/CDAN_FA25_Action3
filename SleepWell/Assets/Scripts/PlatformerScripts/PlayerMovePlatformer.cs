@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovePlatformer : MonoBehaviour {
 
-      public Animator animator;
+      private Animator animator;
       private Rigidbody2D rb2D;
       private bool FaceRight = false; // determine which way player is facing.
       public static float runSpeed = 10f;
@@ -28,14 +28,14 @@ public class PlayerMovePlatformer : MonoBehaviour {
                   transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
 
                   if (Input.GetAxis("Horizontal") != 0){
-                  //       animator.SetBool ("Walk", true);
+                         animator.SetBool ("Walk", true);
                         /*
 						if (!WalkSFX.isPlaying){
                                WalkSFX.Play();
-                        }
+                        
 						*/
                   } else {
-                  //      animator.SetBool ("Walk", false);
+                        animator.SetBool ("Walk", false);
                         //WalkSFX.Stop();
                   }
 
@@ -69,4 +69,10 @@ public class PlayerMovePlatformer : MonoBehaviour {
             theScale.x *= -1;
             transform.localScale = theScale;
       }
+
+      public void GetSheep(){
+            animator.SetTrigger("getSheep");
+      }
+
+
 }

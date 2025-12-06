@@ -8,6 +8,7 @@ using UnityEngine.Audio;
 
 public class GameHandler_CycleStamina : MonoBehaviour
 {
+	public static int playerStamina = 100;
 	public static bool isNight = false;
 	public GameObject iconDay;
 	public GameObject iconNight;
