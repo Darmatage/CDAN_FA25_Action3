@@ -564,7 +564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2b297650dd4ce4bbd223a83c1005a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   startSpeed: 8
   isAlive: 1
   fallDeathPoint: {fileID: 0}
@@ -580,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419966b6faf44ac48b2d3aec68dd392b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   jumpForce: 10
   groundLayer:
     serializedVersion: 2
