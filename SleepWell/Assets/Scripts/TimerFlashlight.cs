@@ -102,4 +102,12 @@ public class TimerFlashlight : MonoBehaviour {
 		flashlightIcon_active.SetActive(true);
 		flashlightIcon_empty.SetActive(false);
 	}
+	public void MouseOver(){
+	flashlightIcon_active.SetActive(true);	
+	flashlightIcon_empty.SetActive(false);
+	}
+	public void MouseNotOver(){
+	flashlightIcon_active.SetActive(false);	
+	flashlightIcon_empty.SetActive(true);
+	}
 }
