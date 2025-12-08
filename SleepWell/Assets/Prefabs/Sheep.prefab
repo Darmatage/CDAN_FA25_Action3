@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3508499738549556834}
   - component: {fileID: 150847623962023560}
   - component: {fileID: 1426130515632426421}
+  - component: {fileID: 817425963846466481}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Sheep
@@ -122,6 +123,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSheepPickUp: 1
   newStamina: 5
+--- !u!114 &817425963846466481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3642369247257175943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1270e9383ecf6e47924dc29fe78b623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedS: 2.5
+  distS: 0.3
 --- !u!1 &6088080113042212720
 GameObject:
   m_ObjectHideFlags: 0
