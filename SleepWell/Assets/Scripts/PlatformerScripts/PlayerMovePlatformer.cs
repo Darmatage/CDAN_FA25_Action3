@@ -54,7 +54,7 @@ public class PlayerMovePlatformer : MonoBehaviour {
 
 		if (transform.position.y <= fallDeathPoint.position.y)
 		{
-			//kill the plyer if they fall:
+			//kill the player if they fall:
 			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_PlayerGetHurt>().PlayerGetHurt(100);
 		}
 

@@ -10,12 +10,13 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 //need a list of current intruder, their location
 	string[] lookWindow = {"Outside_BedroomSouth", "Outside_BedroomWest", "Outside_LivingroomEast", "Outside_LivingroomNorth"};
 	string[] peekRooms = {"Room_Bathroom", "Room_Kitchen", "Room_Workoutroom", "Room_Storagecloset", "Room_Guestbedoom", "Room_Garage"};
+	public AudioSource[] peekRoomSounds;
 
 //timers:
-	float intruderOutsideTimer = 30f;
-	public float intruderOutsideTime = 30f;
-	float intruderInsideTimer = 40f;
-	public float intruderInsideTime = 40f;
+	public static float intruderOutsideTimer = 5;
+	public float intruderOutsideTime = 5f; // to set in inspector
+	public static float intruderInsideTimer = 5f;
+	public float intruderInsideTime = 5f; // to set in inspector
 	public static bool isOutside = false;
 	public static bool isInside = false;
 
@@ -32,6 +33,12 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 		currentSceneName = SceneManager.GetActiveScene().name;
 		CheckPlayerLocation();
 
+		//set intruder times to a quarter of the length of the night: 
+		int quarternight = GetComponent<GameHandler_CycleStamina>().nightLength / 4;
+		intruderOutsideTimer = quarternight;
+		intruderOutsideTime = quarternight;
+		intruderInsideTimer = quarternight;
+		intruderInsideTime = quarternight;
 	}
 
 //Timers for palyer doom OUTSIDE of pek-a-boo system at doors and wndows,
@@ -45,11 +52,9 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 			AddIntruder();
 			Debug.Log("I Hit letter [i]");
 		}
-		//NOTE; GmeHandler_CyleStamina DOES have a way to truigger the intruder in the first hlf ofach night 
-	
+		//NOTE; GmeHandler_CyleStamina DOES have a way to trigger the intruder in the first half of each night 
 
-
-		//Global Intruder Timers for active intruder when the plyer is not at the right place: 
+		//Global Intruder Timers for active intruder when the plyer is not looking in the right place: 
 		if (isOutside && !playerAtTheWindowDoor)
 		{
 			intruderOutsideTimer -= 0.01f;
@@ -61,6 +66,8 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 				numIntruderOutside--;
 				numIntruderInside++;
 				intruderEnteredSFX.Play();
+				Debug.Log("Intruder got into the house!");
+				AddIntruderInside();
 			}
 		}
 		else if (isInside && !playerAtTheWindowDoor){
@@ -92,6 +99,22 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 
 		CheckPlayerLocation();
 	}
+
+	public void AddIntruderInside()
+	{
+		intruderEnteredSFX.Play();
+
+		//set start location of intuder:
+		int intruderLocationNum = Random.Range(0, peekRooms.Length);
+		intruderScene = peekRooms[intruderLocationNum];
+		Debug.Log("enemy is in:" + intruderScene);
+
+		AudioSource roomSoundCrash = peekRoomSounds[intruderLocationNum];
+		roomSoundCrash.Play();
+
+		CheckPlayerLocation();
+	}
+
 
 //if the player isat the correct window or door, pause the global timers and start the intruder prefab: 
 	void CheckPlayerLocation()
@@ -128,6 +151,8 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 			isInside = false;
 			intruderInsideTimer = intruderInsideTime;
 		}
+
+		GameHandler_CycleStamina.hasIntruder = false;
 	}
 
 	public void IntruderFinishedStage()
@@ -139,6 +164,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 			numIntruderInside++;
 			isInside = true;
 			Debug.Log("Intruder got into the house!");
+			AddIntruderInside();
 		} 
 		else
 		{
@@ -153,6 +179,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	void playerLoses()
 	{
 		Debug.Log("YOU LOSE");
+		SceneManager.LoadScene("SceneLose");
 	}
 
 }

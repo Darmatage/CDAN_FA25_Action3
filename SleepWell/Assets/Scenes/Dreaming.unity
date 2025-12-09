@@ -87531,6 +87531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 10
   textGameObject: {fileID: 2032267269}
+  isDream: 1
 --- !u!1 &1234881532
 GameObject:
   m_ObjectHideFlags: 0
@@ -87731,6 +87732,26 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.8392157
       objectReference: {fileID: 0}
+    - target: {fileID: 3042003857343742172, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042003857343742172, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392591197556583088, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392591197556583088, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392591197556583088, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3463974389174771932, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -87753,7 +87774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3768427204731248046, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3833674098273774634, guid: 0b450b2e228da644396e1251b5d6b631, type: 3}
       propertyPath: m_Type

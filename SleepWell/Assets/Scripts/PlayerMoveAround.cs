@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMoveAround : MonoBehaviour {
 
-      public Animator anim;
+      private Animator anim;
       //public AudioSource WalkSFX;
       private Rigidbody2D rb2D;
       private bool FaceRight = false; // determine which way player is facing.
@@ -79,6 +79,11 @@ public class PlayerMoveAround : MonoBehaviour {
 		{
 			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().atBed = true;
 		}
+
+		if (other.gameObject.tag == "Desk")
+		{
+			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().atDesk = true;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
@@ -86,6 +91,11 @@ public class PlayerMoveAround : MonoBehaviour {
 		if (other.gameObject.tag == "Bed")
 		{
 			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().atBed = false;
+		}
+
+		if (other.gameObject.tag == "Desk")
+		{
+			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().atDesk = false;
 		}
 	}
 

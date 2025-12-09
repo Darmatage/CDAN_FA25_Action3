@@ -10,7 +10,7 @@ public class GameHandler_PlayerGetHurt : MonoBehaviour
 
 	public  int playerHealth = 10;
     public TMP_Text textGameObject;
-
+	public bool isDream= true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +32,7 @@ public class GameHandler_PlayerGetHurt : MonoBehaviour
 
 	public void DisplayHealth()
 	{
-		textGameObject.text = "Dream Health: " + playerHealth;
+		if (isDream){textGameObject.text = "Dream Health: " + playerHealth;}
+		else {textGameObject.text = "Work Health: " + playerHealth;} 
 	}
 }

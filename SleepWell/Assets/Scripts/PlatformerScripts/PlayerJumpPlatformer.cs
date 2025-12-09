@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour {
 
-      public Animator anim;
+      private Animator anim;
       Rigidbody2D rb;
       public float jumpForce = 6f;
       public LayerMask groundLayer;

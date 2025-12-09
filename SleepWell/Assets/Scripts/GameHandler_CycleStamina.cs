@@ -15,10 +15,13 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	public int nightLength = 90;
 	public int dayLength = 60;
 
+//Dreaming and Working Scene access buttons:
 	public GameObject GoToSleepButton;
+	public GameObject GoToWorkButton;
+
 
 	//Day / Night Timer:
-	float theTimer = 0;
+	public float theTimer = 0;
 	public static int theTime = 0;
 	public static int dayTime= 0;
 	public static int nightTime= 0;
@@ -28,19 +31,22 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	public static int dayOfWeek= 1;
 	public GameObject dayOfWeekBG;
 
-	//Sleeping
+
+	//sleeping/ bed stuff
 	public static bool isSleeping = false;
 	public GameObject iconSleeping;
-
-
-	//bed stuff
 	public bool atBed = false;
 	private string thisLevel;
 	private Vector2 bedReturnPos;
 
+	//working/ desk stuff
+	public static bool isWorking = false;
+	public bool atDesk = false;
+	private Vector2 deskReturnPos;
+
 	//intruder stuff:
 	private int intruderSpawnTime;
-	private bool hasIntruder = false;
+	public static bool hasIntruder = false;
 
 //player energy stuff:
 	public static float playerEnergy = 100f;
@@ -52,6 +58,8 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	float nightEnergyLossRate = 0.01f; // every one second
 	float energyLossRate = 0.001f;
 
+//flashlight:
+	public GameObject flashLightTimer;
 
 	void Start()
 	{
@@ -62,7 +70,15 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			Transform theBed = GameObject.FindWithTag("Bed").GetComponent<Transform>();
 			bedReturnPos = new Vector2((theBed.position.x), (theBed.position.y)); 
 		}
-		//
+
+		//return to desk system:
+		if (GameObject.FindWithTag("Desk")!=null){
+			Transform theDesk = GameObject.FindWithTag("Desk").GetComponent<Transform>();
+			deskReturnPos = new Vector2((theDesk.position.x), (theDesk.position.y)); 
+		}
+
+
+		//don't lose energy in the Dreaming scene
 		if (thisLevel =="Dreaming"){
 			canLoseEnergy = false; 
 		}
@@ -89,29 +105,34 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		//playerEnergy = playerEnergyMax;
 		energyBarDisplay.gameObject.SetActive(true);
 		DisplayEnergy();
+
+		//Flashlight display:
+		if (!isNight || isWorking || isSleeping || thisLevel =="House_Main")
+		{
+			flashLightTimer.SetActive(false);
+		}
+		else
+		{
+			flashLightTimer.SetActive(true);
+		}
+
 	}
 
 
 	void Update()
 	{
-		//inputs to break out of dream -- maybe a skillcheck bar?
-		if (Input.GetKeyDown("q") && isSleeping)
-		{
-			StopSleeping();
-		}
+		//Test inputs to break out of dream -- maybe a wackmolsystem? skillcheck bar?
+		//SLEEP
+		if (Input.GetKeyDown("q") && isSleeping){StopSleeping();}
+		if (Input.GetKeyDown("s") && !isSleeping && atBed){StartSleeping();}
+		if (isNight && atBed){GoToSleepButton.SetActive(true);}
+		else{GoToSleepButton.SetActive(false);} 
 
-		if (Input.GetKeyDown("s") && !isSleeping && atBed)
-		{
-			StartSleeping();
-		}
-
-		if (isNight && atBed){
-			GoToSleepButton.SetActive(true);
-		}
-		else
-		{
-			GoToSleepButton.SetActive(false);
-		} 
+		//WORK
+		if (Input.GetKeyDown("l") && isWorking){StopWorking();}
+		if (Input.GetKeyDown("k") && !isWorking && atDesk){StartWorking();}
+		if (!isNight && atDesk){GoToWorkButton.SetActive(true);}
+		else{GoToWorkButton.SetActive(false);} 
 
 	}
 
@@ -133,7 +154,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			}
 
 		//day night timer:
-		theTimer += 0.05f;
+		theTimer += 0.01f;
 		if (theTimer >= 1)
 		{
 			theTime++;
@@ -156,7 +177,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			GetComponent<GameHandler_IntruderStatus>().AddIntruder();
 		}
 		
-		//swithc day and night:
+		//switch day and night:
 		if (isNight && theTime >= nightLength)
 		{
 			SwitchToDay();
@@ -229,6 +250,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 		hasIntruder = false;
 		energyLossRate = dayEnergyLossRate;
+		flashLightTimer.SetActive(false);
 	}
 
 	void SwitchToNight()
@@ -238,8 +260,14 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		iconNight.SetActive(true);
 		iconDay.SetActive(false);
 		dayOfWeekBG.SetActive(false);
-		intruderSpawnTime = Random.Range(0, nightLength/2);
+
+		if (isWorking){
+			StopWorking();
+		}
+
+		intruderSpawnTime = Random.Range(0, nightLength/2); //spawn the player in the first half of the night
 		energyLossRate = nightEnergyLossRate;
+		flashLightTimer.SetActive(true);
 		
 	}
 
@@ -270,6 +298,31 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		SceneManager.LoadScene ("House_Main");
 	}
 
+//SLEEPING:
+	public void StartWorking()
+	{
+		isWorking = true;
+		//iconSleeping.SetActive(true);
+		//theTimer = 0;
+		//if (isDay){SwitchToNight();}
+
+		GoToWorkButton.SetActive(false);
+
+		GameHandler_PlayerReturn.lastDoorPosition = deskReturnPos;
+		GameHandler_PlayerReturn.lastMap = thisLevel; 
+
+		SceneManager.LoadScene ("Working");
+	}
+
+	public void StopWorking()
+	{
+		isWorking = false;
+		//iconSleeping.SetActive(false);
+		if (!isNight){
+			GoToWorkButton.SetActive(true);
+		}
+		SceneManager.LoadScene ("House_Main");
+	}
 
 	public void AddEnergy(float energy)
 	{
