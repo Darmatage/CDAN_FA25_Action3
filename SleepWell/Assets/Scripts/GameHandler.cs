@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-        public static int playerStat1;
-        // public TMP_Text textGameObject;
+		//public static int playerStat1;
+		// public TMP_Text textGameObject;
 
-        // void Start () { UpdateScore (); }
+        void Start () { 
+			//UpdateScore ();
+		}
 
-        void Update(){
-        
+        void FixedUpdate(){
 
                 // Stat tester:
                 //if (Input.GetKey("p")){
@@ -25,16 +26,16 @@ public class GameHandler : MonoBehaviour{
         //        textGameObject.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("House_Main");
+			SceneManager.LoadScene("House_Main");
         }
 
         public void OpenCredits(){
-                SceneManager.LoadScene("Credits");
+			SceneManager.LoadScene("Credits");
         }
 
         public void RestartGame(){
-                Time.timeScale = 1f;
-                SceneManager.LoadScene("MainMenu");
+			Time.timeScale = 1f;
+			SceneManager.LoadScene("MainMenu");
         }
 
         public void QuitGame(){

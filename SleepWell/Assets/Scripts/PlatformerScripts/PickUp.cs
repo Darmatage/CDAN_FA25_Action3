@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour{
 
-      //private GameHandler gameHandler;
+      private GameHandler_CycleStamina gameHandler_CycleStamina;
       //public playerVFX playerPowerupVFX;
       public bool isSheepPickUp = true;
      
@@ -13,7 +13,7 @@ public class PickUp : MonoBehaviour{
       
 
       void Start(){
-            //gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+            gameHandler_CycleStamina = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>();
             //playerPowerupVFX = GameObject.FindWithTag("Player").GetComponent<playerVFX>();
       }
 
@@ -24,7 +24,7 @@ public class PickUp : MonoBehaviour{
                   StartCoroutine(DestroyThis());
 
                   if (isSheepPickUp == true) {
-                        GameHandler_CycleStamina.playerStamina += newStamina;
+                        gameHandler_CycleStamina.AddEnergy(newStamina);
                         other.gameObject.GetComponent<PlayerMovePlatformer>().GetSheep();
                         //playerPowerupVFX.powerup();
                   }

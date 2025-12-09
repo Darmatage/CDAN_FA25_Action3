@@ -541,7 +541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'An intruder got you!
+  m_text: 'You ran out of stamina!
 
 
     I''d say sweet dreams

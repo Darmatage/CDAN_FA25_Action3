@@ -8,7 +8,7 @@ using UnityEngine.Audio;
 
 public class GameHandler_CycleStamina : MonoBehaviour
 {
-	public static int playerStamina = 100;
+	//public static int playerStamina = 100;
 	public static bool isNight = false;
 	public GameObject iconDay;
 	public GameObject iconNight;
@@ -42,13 +42,33 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	private int intruderSpawnTime;
 	private bool hasIntruder = false;
 
-	// Start is called once before the first execution of Update after the MonoBehaviour is created
+//player energy stuff:
+	public static float playerEnergy = 100f;
+	public float playerEnergyMax = 100f;
+	bool canLoseEnergy = true; //set false while sleeping! 
+	float theEnergyTimer = 1;
+	public Image energyBarDisplay;
+	float dayEnergyLossRate = 0.005f; // every five seconds
+	float nightEnergyLossRate = 0.01f; // every one second
+	float energyLossRate = 0.001f;
+
+
 	void Start()
 	{
+
 		thisLevel = SceneManager.GetActiveScene().name;
+		//return to bed system:
 		if (GameObject.FindWithTag("Bed")!=null){
 			Transform theBed = GameObject.FindWithTag("Bed").GetComponent<Transform>();
 			bedReturnPos = new Vector2((theBed.position.x), (theBed.position.y)); 
+		}
+		//
+		if (thisLevel =="Dreaming"){
+			canLoseEnergy = false; 
+		}
+		else
+		{
+			canLoseEnergy = true;
 		}
 
 		if (!isNight){
@@ -64,6 +84,11 @@ public class GameHandler_CycleStamina : MonoBehaviour
 			iconDay.SetActive(false);
 			GoToSleepButton.SetActive(false); // ned to be atBed -- see Update()
 		} 
+
+		//player energy:
+		//playerEnergy = playerEnergyMax;
+		energyBarDisplay.gameObject.SetActive(true);
+		DisplayEnergy();
 	}
 
 
@@ -92,6 +117,22 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 	void FixedUpdate()
 	{
+		//player slowly loses energy
+			if (canLoseEnergy){
+				theEnergyTimer -= energyLossRate;
+				if (theEnergyTimer <= 0){
+					theEnergyTimer = 1;
+					playerEnergy --;
+					DisplayEnergy();
+					//Debug.Log("Player Energy = " + playerEnergy);
+				}
+				if (playerEnergy <= 0){
+					playerEnergy = 0;
+					Debug.Log("Player lost all energy-- you should have slept!");
+				}
+			}
+
+		//day night timer:
 		theTimer += 0.05f;
 		if (theTimer >= 1)
 		{
@@ -171,6 +212,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 	void SwitchToDay()
 	{
+		
 		dayOfWeek++;
 		if (dayOfWeek >= 8)
 		{
@@ -186,15 +228,18 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		}
 
 		hasIntruder = false;
+		energyLossRate = dayEnergyLossRate;
 	}
 
 	void SwitchToNight()
 	{
+		
 		isNight = true;
 		iconNight.SetActive(true);
 		iconDay.SetActive(false);
 		dayOfWeekBG.SetActive(false);
 		intruderSpawnTime = Random.Range(0, nightLength/2);
+		energyLossRate = nightEnergyLossRate;
 		
 	}
 
@@ -224,6 +269,27 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		}
 		SceneManager.LoadScene ("House_Main");
 	}
+
+
+	public void AddEnergy(float energy)
+	{
+		playerEnergy += energy;
+		if (playerEnergy > playerEnergyMax)
+		{
+			playerEnergy = playerEnergyMax;
+		}
+		DisplayEnergy();
+	}
+	void DisplayEnergy()
+	{
+		energyBarDisplay.fillAmount = playerEnergy / playerEnergyMax;
+	}
+
+	public void PlayerEnergyLose()
+	{
+		SceneManager.LoadScene("EndLose_NoStamina");
+	} 
+
 }
 
 

@@ -3,15 +3,15 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CircleTimer : MonoBehaviour {
+public class EnergyTimer : MonoBehaviour {
        public float timerMax = 10f;       //set the number of seconds here
        private float theTimer = 0f;
        public bool doTheThing = false;
 
-       public Image timerCircleDisplay;
+       public Image timerBarDisplay;
 
       void Start(){
-           timerCircleDisplay.gameObject.SetActive(false);
+           timerBarDisplay.gameObject.SetActive(true);
            theTimer = timerMax;
       }
 
@@ -26,8 +26,8 @@ public class CircleTimer : MonoBehaviour {
             if (doTheThing == true){
                   theTimer -= 0.001f;
                   Debug.Log("time: " + theTimer);
-                  timerCircleDisplay.gameObject.SetActive(true);
-                  timerCircleDisplay.fillAmount = theTimer / timerMax;
+                  timerBarDisplay.gameObject.SetActive(true);
+                  timerBarDisplay.fillAmount = theTimer / timerMax;
 
                   if (theTimer <= 0){
                         theTimer = timerMax;
