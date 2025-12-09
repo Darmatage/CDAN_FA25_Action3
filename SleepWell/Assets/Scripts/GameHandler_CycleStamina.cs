@@ -343,6 +343,21 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		SceneManager.LoadScene("EndLose_NoStamina");
 	} 
 
+
+	public void AddBatteryPublic(float newBatteries1)
+	{
+		StartCoroutine(AddBattery(newBatteries1));
+	}
+
+	IEnumerator AddBattery(float newBatteries2)
+	{
+		flashLightTimer.SetActive(true);
+		yield return new WaitForSeconds(0.5f);
+		flashLightTimer.GetComponent<TimerFlashlight>().GetBattery(newBatteries2);
+		yield return new WaitForSeconds(0.5f);
+		flashLightTimer.SetActive(false);
+	}
+
 }
 
 

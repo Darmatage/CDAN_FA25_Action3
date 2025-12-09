@@ -98,8 +98,8 @@ MonoBehaviour:
   PickupSFX: {fileID: -2135018362286861155}
   isSheepPickUp: 0
   newStamina: 5
-  isBatteryPickUp: 0
-  newBatteries: 5
+  isBatteryPickUp: 1
+  newBatteries: 3
 --- !u!114 &1355886641293785987
 MonoBehaviour:
   m_ObjectHideFlags: 0

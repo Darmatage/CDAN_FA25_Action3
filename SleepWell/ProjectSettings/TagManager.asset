@@ -12,6 +12,7 @@ TagManager:
   - Flashlight
   - Sheep
   - Desk
+  - flashlightTimer
   layers:
   - Default
   - TransparentFX

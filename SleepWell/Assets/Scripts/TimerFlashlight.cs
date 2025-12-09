@@ -6,8 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TimerFlashlight : MonoBehaviour {
-       public float timerMax = 10f;       //set the number of seconds here
-       private static float theTimer = 0f;
+       public float timerMax = 20f;       //set the number of seconds here this is our battery!
+       private static float theTimer = 20f;
        public bool doTheThing = false;
 	   	   
 
@@ -29,7 +29,7 @@ public class TimerFlashlight : MonoBehaviour {
 		if (
 			(sceneName != "House_Main")
 			&& (sceneName != "Dreaming")
-			&& (sceneName != "Accounting")
+			&& (sceneName != "Working")
 		){isFlashlightScene = true;}
 		else {isFlashlightScene = false;}
 
@@ -50,7 +50,7 @@ public class TimerFlashlight : MonoBehaviour {
       void Update(){
             //test functionality. Normally set=true by external script.
             if (Input.GetKeyDown("f")){
-				GetBattery();
+				GetBattery(100);
             }
       }
 
@@ -95,17 +95,26 @@ public class TimerFlashlight : MonoBehaviour {
 		}
 	}
 
-	public void GetBattery()
+	public void GetBattery(float timeAdd)
 	{
-		theTimer = timerMax;
+		theTimer += timeAdd;
+		/*
+		//don't allow superchrging:
+		if (theTimer > timerMax)
+		{
+			theTimer= timerMax;
+		}
+		*/
 		timerDisplay.fillAmount = theTimer / timerMax;
 		flashlightIcon_active.SetActive(true);
 		flashlightIcon_empty.SetActive(false);
 	}
+
 	public void MouseOver(){
 	flashlightIcon_active.SetActive(true);	
 	flashlightIcon_empty.SetActive(false);
 	}
+
 	public void MouseNotOver(){
 	flashlightIcon_active.SetActive(false);	
 	flashlightIcon_empty.SetActive(true);

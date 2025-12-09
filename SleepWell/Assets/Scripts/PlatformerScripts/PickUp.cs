@@ -10,7 +10,7 @@ public class PickUp : MonoBehaviour{
     public int newStamina = 5;
 
 	public bool isBatteryPickUp = false;
-	public int newBatteries = 5;	
+	public int newBatteries = 3;	
 
       void Start(){
             gameHandler_CycleStamina = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>();
@@ -32,7 +32,8 @@ public class PickUp : MonoBehaviour{
 				  if (isBatteryPickUp == true) {
                         //gameHandler_CycleStamina.AddBattery(newBatteries);
                         //other.gameObject.GetComponent<PlayerMovePlatformer>().GetSheep();
-						Debug.Log("got bttery");
+						Debug.Log("got battery: " + newBatteries);
+						GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>().AddBatteryPublic(newBatteries);
                   }
 
             }
