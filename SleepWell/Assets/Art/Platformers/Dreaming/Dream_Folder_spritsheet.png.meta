@@ -1,0 +1,678 @@
+fileFormatVersion: 2
+guid: 8726bb649eaa2b8448bde9804aacc514
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8226211009907894004
+    second: Dream Items_0
+  - first:
+      213: -4126361824598561802
+    second: Dream Items_1
+  - first:
+      213: 4356881794284105953
+    second: Dream Items_2
+  - first:
+      213: -3615521017412414757
+    second: Dream Items_3
+  - first:
+      213: 573009141180288802
+    second: Dream Items_4
+  - first:
+      213: 6614604907211448972
+    second: Dream Items_5
+  - first:
+      213: 68960619481920177
+    second: Dream Items_6
+  - first:
+      213: 209378835395878218
+    second: Dream Items_7
+  - first:
+      213: 7435603115883567927
+    second: Dream Items_8
+  - first:
+      213: -9121829911343582934
+    second: Dream Items_9
+  - first:
+      213: 3980805558171267113
+    second: Dream Items_10
+  - first:
+      213: 7173242837402077068
+    second: Dream Items_11
+  - first:
+      213: -6618763289200282677
+    second: Dream Items_12
+  - first:
+      213: -2589964343037130434
+    second: Dream Items_13
+  - first:
+      213: -1786088491041309977
+    second: Dream Items_14
+  - first:
+      213: 2483445534835499722
+    second: Dream Items_15
+  - first:
+      213: -3822465321817939113
+    second: Dream Items_16
+  - first:
+      213: -4317601620524654089
+    second: Dream Items_17
+  - first:
+      213: 8580735153260315007
+    second: Dream Items_18
+  - first:
+      213: 4407094934028597842
+    second: Dream Items_19
+  - first:
+      213: -8723514888121403102
+    second: Dream Items_20
+  - first:
+      213: -9123657959828434788
+    second: Dream Items_21
+  - first:
+      213: -1812008115564630603
+    second: Dream Items_22
+  - first:
+      213: -2372014657871514098
+    second: Dream Items_23
+  - first:
+      213: 6518457231910979432
+    second: Dream Items_24
+  - first:
+      213: 4595315219829962889
+    second: Dream Items_25
+  - first:
+      213: -260897176857040203
+    second: Dream Items_26
+  - first:
+      213: 1908684029471975088
+    second: Dream Items_27
+  - first:
+      213: -6631514418064315349
+    second: Dream Items_28
+  - first:
+      213: -7208903083665960933
+    second: Dream Items_29
+  - first:
+      213: -8841512077057356167
+    second: Dream Items_30
+  - first:
+      213: -7075870817013840832
+    second: Dream Items_31
+  - first:
+      213: 7423278312139289197
+    second: Dream Items_32
+  - first:
+      213: -4038789378610179065
+    second: Dream Items_33
+  - first:
+      213: -4527022680942853129
+    second: Dream Items_34
+  - first:
+      213: 2741548385896053579
+    second: Dream Items_35
+  - first:
+      213: -873407762701576762
+    second: Dream Items_36
+  - first:
+      213: 6929148302693983051
+    second: Dream Items_37
+  - first:
+      213: -4244467240944380623
+    second: Dream Items_38
+  - first:
+      213: 4347222581678680701
+    second: Dream Items_39
+  - first:
+      213: 9176750729291849265
+    second: Dream Items_40
+  - first:
+      213: -7925804791086176463
+    second: Dream Items_41
+  - first:
+      213: -3202107133166200308
+    second: Dream Items_42
+  - first:
+      213: -509188261652940053
+    second: Dream Items_43
+  - first:
+      213: -5167164552721462213
+    second: Dream Items_44
+  - first:
+      213: -2419264069160843939
+    second: Dream Items_45
+  - first:
+      213: 6473258367311403064
+    second: Dream Items_46
+  - first:
+      213: 8269379428308809329
+    second: Dream Items_47
+  - first:
+      213: 3134272169478428654
+    second: Dream Items_48
+  - first:
+      213: 900312013371920086
+    second: Dream Items_49
+  - first:
+      213: -1717893370161812644
+    second: Dream Items_50
+  - first:
+      213: -2391452856756600273
+    second: Dream Items_51
+  - first:
+      213: -223204394629104111
+    second: Dream Items_52
+  - first:
+      213: -4582407277894088156
+    second: Dream Items_53
+  - first:
+      213: 1083886639654975867
+    second: Dream Items_54
+  - first:
+      213: 6149858998381040056
+    second: Dream Items_55
+  - first:
+      213: 1206650292692885823
+    second: Dream Items_56
+  - first:
+      213: -4638808477502395950
+    second: Dream Items_57
+  - first:
+      213: 7242381621698053451
+    second: Dream Items_58
+  - first:
+      213: 924318023088303685
+    second: Dream Items_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dream Items_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09580bbba0a6dd80800000000000000
+      internalID: -8226211009907894004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbe11e68c73cb6c0800000000000000
+      internalID: -4126361824598561802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0bbac78e0c67c30800000000000000
+      internalID: 4356881794284105953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd29c2f5ac613ddc0800000000000000
+      internalID: -3615521017412414757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f4a1927ccb3f700800000000000000
+      internalID: 573009141180288802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82e4ef0e1ccbcb50800000000000000
+      internalID: 6614604907211448972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2f5bb615ff4f000800000000000000
+      internalID: 68960619481920177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d914301fcd7e200800000000000000
+      internalID: 209378835395878218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b170d63a1903760800000000000000
+      internalID: 7435603115883567927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2135d07600c86180800000000000000
+      internalID: -9121829911343582934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920f2be5099ae3730800000000000000
+      internalID: 3980805558171267113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8747faea5a7c8360800000000000000
+      internalID: 7173242837402077068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc332de2bdd6524a0800000000000000
+      internalID: -6618763289200282677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e390858f6299e0cd0800000000000000
+      internalID: -2589964343037130434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eab1120bf98637e0800000000000000
+      internalID: -1786088491041309977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dream Items_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac266ea5e88f67220800000000000000
+      internalID: 2483445534835499722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a4429c10c6d60b84db6bd7bb3890370e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dream Items_0: -8226211009907894004
+      Dream Items_1: -4126361824598561802
+      Dream Items_10: 3980805558171267113
+      Dream Items_11: 7173242837402077068
+      Dream Items_12: -6618763289200282677
+      Dream Items_13: -2589964343037130434
+      Dream Items_14: -1786088491041309977
+      Dream Items_15: 2483445534835499722
+      Dream Items_2: 4356881794284105953
+      Dream Items_3: -3615521017412414757
+      Dream Items_4: 573009141180288802
+      Dream Items_5: 6614604907211448972
+      Dream Items_6: 68960619481920177
+      Dream Items_7: 209378835395878218
+      Dream Items_8: 7435603115883567927
+      Dream Items_9: -9121829911343582934
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -127,6 +127,7 @@ MonoBehaviour:
   newStamina: 5
   isBatteryPickUp: 0
   newBatteries: 5
+  destroyTime: 1
 --- !u!114 &817425963846466481
 MonoBehaviour:
   m_ObjectHideFlags: 0

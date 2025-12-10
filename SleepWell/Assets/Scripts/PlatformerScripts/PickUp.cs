@@ -12,6 +12,8 @@ public class PickUp : MonoBehaviour{
 	public bool isBatteryPickUp = false;
 	public int newBatteries = 3;	
 
+	public float destroyTime= 0.3f;
+
       void Start(){
             gameHandler_CycleStamina = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_CycleStamina>();
             //playerPowerupVFX = GameObject.FindWithTag("Player").GetComponent<playerVFX>();
@@ -40,7 +42,7 @@ public class PickUp : MonoBehaviour{
       }
 
       IEnumerator DestroyThis(){
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(destroyTime);
             Destroy(gameObject);
       }
 
