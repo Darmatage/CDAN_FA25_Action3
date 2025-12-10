@@ -34,11 +34,11 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 		CheckPlayerLocation();
 
 		//set intruder times to a quarter of the length of the night: 
-		int quarternight = GetComponent<GameHandler_CycleStamina>().nightLength / 4;
-		intruderOutsideTimer = quarternight;
-		intruderOutsideTime = quarternight;
-		intruderInsideTimer = quarternight;
-		intruderInsideTime = quarternight;
+		int nightPortion = GetComponent<GameHandler_CycleStamina>().nightLength / 5;
+		intruderOutsideTimer = nightPortion;
+		intruderOutsideTime = nightPortion;
+		intruderInsideTimer = nightPortion;
+		intruderInsideTime = nightPortion;
 	}
 
 //Timers for palyer doom OUTSIDE of pek-a-boo system at doors and wndows,

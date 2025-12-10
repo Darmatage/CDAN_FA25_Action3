@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameHandler_PlayerGetHurt : MonoBehaviour
 {
 
-	public  int playerHealth = 10;
+	public static int playerHealth = 10;
     public TMP_Text textGameObject;
 	public bool isDream= true;
 

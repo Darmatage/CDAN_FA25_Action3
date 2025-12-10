@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class PlayerHurt: MonoBehaviour {
 
-      Animator anim;
-      //public Rigidbody2D rb2D;
-	  public SpriteRenderer playerArt;
-	  public Color colorHurt;
-	  public Color colorNormal;
+	Animator anim;
+	//public Rigidbody2D rb2D;
+	SpriteRenderer playerArt;
+	public Color colorHurt;
+	public Color colorNormal;
 
-      void Start(){
-           anim = gameObject.GetComponentInChildren<Animator>();
-           //rb2D = transform.GetComponent<Rigidbody2D>(); 
-			playerArt = GetComponentInChildren<SpriteRenderer>();          
-      }
+	CameraShake cameraShake;
+
+	void Start(){
+		anim = gameObject.GetComponentInChildren<Animator>();
+		//rb2D = transform.GetComponent<Rigidbody2D>(); 
+		playerArt = GetComponentInChildren<SpriteRenderer>();   
+		cameraShake = GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>();       
+	}
 
       public void PlayerHit(){
             //anim.SetTrigger ("GetHurt");
+			cameraShake.ShakeCamera(0.15f, 0.3f);
 			StartCoroutine(PlayerColorChange());
       }
 

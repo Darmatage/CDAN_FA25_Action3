@@ -18,7 +18,8 @@ public class AudioInterrupt : MonoBehaviour {
 		{
 			audioSource = menuMusic;
 			PlayMusicAtBegin();
-		}
+		} 
+		
 	}
 
         void Update(){
