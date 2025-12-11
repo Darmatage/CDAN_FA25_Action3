@@ -9,7 +9,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 
 //need a list of current intruder, their location
 	string[] lookWindow = {"Outside_BedroomSouth", "Outside_BedroomWest", "Outside_LivingroomEast", "Outside_LivingroomNorth"};
-	string[] peekRooms = {"Room_Bathroom", "Room_Kitchen", "Room_Workoutroom", "Room_Storagecloset", "Room_Guestbedoom", "Room_Garage"};
+	string[] peekRooms = {"Room_Bathroom", "Room_Kitchen", "Room_Workoutroom", "Room_Storagecloset", "Room_Guestbedroom", "Room_Garage"};
 	public AudioSource[] peekRoomSounds;
 
 //timers:

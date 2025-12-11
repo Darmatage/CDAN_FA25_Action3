@@ -13,7 +13,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	public GameObject iconDay;
 	public GameObject iconNight;
 	public int nightLength = 90;
-	public int dayLength = 60;
+	public int dayLength = 40;
 
 //Dreaming and Working Scene access buttons:
 	public GameObject GoToSleepButton;
@@ -56,7 +56,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	public Image energyBarDisplay;
 	float dayEnergyLossRate = 0.005f; // every five seconds
 	float nightEnergyLossRate = 0.01f; // every one second
-	float energyLossRate = 0.001f;
+	float energyLossRate = 0.006f;
 
 //flashlight:
 	public GameObject flashLightTimer;
@@ -124,13 +124,13 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		//Test inputs to break out of dream -- maybe a wackmolsystem? skillcheck bar?
 		//SLEEP
 		if (Input.GetKeyDown("q") && isSleeping){StopSleeping();}
-		if (Input.GetKeyDown("s") && !isSleeping && atBed){StartSleeping();}
+		if (Input.GetKeyDown("s") && !isSleeping && atBed && isNight){StartSleeping();}
 		if (isNight && atBed){GoToSleepButton.SetActive(true);}
 		else{GoToSleepButton.SetActive(false);} 
 
 		//WORK
 		if (Input.GetKeyDown("l") && isWorking){StopWorking();}
-		if (Input.GetKeyDown("k") && !isWorking && atDesk){StartWorking();}
+		if (Input.GetKeyDown("k") && !isWorking && atDesk && !isNight){StartWorking();}
 		if (!isNight && atDesk){GoToWorkButton.SetActive(true);}
 		else{GoToWorkButton.SetActive(false);} 
 

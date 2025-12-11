@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5acb382467e9e491d90ee66c615cc28f
+guid: 9ee3e73f669ad4adb90984705a54c8bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1953485597824248075
-    second: RoomPeek_GymWindowNight_0
+      213: 6898685870818216241
+    second: RoomPeek_ClosetMoppBucket_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RoomPeek_GymWindowNight_0
+      name: RoomPeek_ClosetMoppBucket_0
       rect:
         serializedVersion: 2
-        x: 129
-        y: 101
-        width: 104
-        height: 227
+        x: 253
+        y: 60
+        width: 106
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b09e72c1dcc2c1b10800000000000000
-      internalID: 1953485597824248075
+      spriteID: 139402baf3e0dbf50800000000000000
+      internalID: 6898685870818216241
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RoomPeek_GymWindowNight_0: 1953485597824248075
+      RoomPeek_ClosetMoppBucket_0: 6898685870818216241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

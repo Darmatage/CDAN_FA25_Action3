@@ -3721,7 +3721,7 @@ MonoBehaviour:
   iconDay: {fileID: 6702708209165071437}
   iconNight: {fileID: 3640839000062729446}
   nightLength: 90
-  dayLength: 60
+  dayLength: 40
   GoToSleepButton: {fileID: 5361385255437993127}
   GoToWorkButton: {fileID: 948839806894510751}
   theTimer: 0

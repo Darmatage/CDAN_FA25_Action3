@@ -23,6 +23,9 @@ public class Intruder_SceneSystem : MonoBehaviour{
 	public Light2D lightFrontWall;
 	public Light2D lightOutside;
 
+
+	public bool isInteriorRoom = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -63,7 +66,16 @@ public class Intruder_SceneSystem : MonoBehaviour{
 //spawn an intruder, activated by the GameHandler_IntruderStatus:
 	public void StartIntruder()
 	{
-		int startNum = Random.Range(1,5);
+		int startNum = 0;
+
+		if (!isInteriorRoom){
+			startNum = Random.Range(1,5);
+		}
+		else
+		{
+			startNum = Random.Range(1,3);
+		}
+
 		if (startNum == 1){thePath = path1;} 
 		else if (startNum == 2){thePath = path2;}
 		else if (startNum == 3){thePath = path3;}		

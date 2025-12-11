@@ -25,6 +25,7 @@ public class GameHandler_PlayerGetHurt : MonoBehaviour
         if (playerHealth <= 0)
 		{
 			Debug.Log("You woke up from getting hurt");
+			playerHealth = 10;
 			GetComponent<GameHandler_CycleStamina>().StopSleeping();
 		}
     }

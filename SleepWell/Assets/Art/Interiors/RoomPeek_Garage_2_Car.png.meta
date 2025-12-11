@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5acb382467e9e491d90ee66c615cc28f
+guid: d19cc0db074e846c884131dd0670e417
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1953485597824248075
-    second: RoomPeek_GymWindowNight_0
+      213: 2985709196402870059
+    second: RoomPeek_GarageCar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RoomPeek_GymWindowNight_0
+      name: RoomPeek_GarageCar_0
       rect:
         serializedVersion: 2
-        x: 129
-        y: 101
-        width: 104
-        height: 227
+        x: 202
+        y: 33
+        width: 320
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b09e72c1dcc2c1b10800000000000000
-      internalID: 1953485597824248075
+      spriteID: b27c536f1be5f6920800000000000000
+      internalID: 2985709196402870059
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RoomPeek_GymWindowNight_0: 1953485597824248075
+      RoomPeek_GarageCar_0: 2985709196402870059
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

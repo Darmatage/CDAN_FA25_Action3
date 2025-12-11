@@ -428,11 +428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377543875386234601, guid: 890f6e539a92a434aba758c557ae0758, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 370
       objectReference: {fileID: 0}
     - target: {fileID: 3377543875386234601, guid: 890f6e539a92a434aba758c557ae0758, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -284.99997
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 3377543875386234601, guid: 890f6e539a92a434aba758c557ae0758, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -518,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.086, y: 53.144}
+  m_AnchoredPosition: {x: 1.086, y: -131}
   m_SizeDelta: {x: 602.171, y: 245.712}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &919720091
@@ -676,14 +676,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6886792, g: 0.24809708, b: 0.21764861, a: 1}
+  m_Color: {r: 0.98490566, g: 0.6576723, b: 0.63740116, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3195229576919390285, guid: 5317ee74bdebc2348abd415e5d576e52, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1286,11 +1286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3377543875386234601, guid: 890f6e539a92a434aba758c557ae0758, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -370
       objectReference: {fileID: 0}
     - target: {fileID: 3377543875386234601, guid: 890f6e539a92a434aba758c557ae0758, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 3377543875386234601, guid: 890f6e539a92a434aba758c557ae0758, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
