@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7c85a4381eeeb41ddb14f47d7d173d36
+guid: e42907961609df844a26cf215aba1756
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -848381713617584042
-    second: WinScreen_0
+      213: 1202642312326991415
+    second: Layer Sky_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,15 +40,15 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WinScreen_0
+      name: Layer Sky_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 720
+        width: 1960
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65003ed8351f934f0800000000000000
-      internalID: -848381713617584042
+      spriteID: 73eca1aafc4a0b010800000000000000
+      internalID: 1202642312326991415
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WinScreen_0: -848381713617584042
+      Layer Sky_0: 1202642312326991415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
