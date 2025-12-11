@@ -116,6 +116,7 @@ public class Intruder_SceneSystem : MonoBehaviour{
 		if (thisIntruder != null){
 			intT.localScale = new Vector3(intT.localScale.x  * intrudeScale, intT.localScale.y * intrudeScale, intT.localScale.z);
 			GameObject.FindWithTag("GameHandler").GetComponent<GameHandler_IntruderStatus>().IntruderFinishedStage();
+			Debug.Log("xxx Intruderpotted in scene progressed to next stage");
 			Destroy (thisIntruder);
 		}
 	}

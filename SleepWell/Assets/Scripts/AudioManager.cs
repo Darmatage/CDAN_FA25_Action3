@@ -3,22 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class AudioInterrupt : MonoBehaviour {
+public class AudioManager : MonoBehaviour {
 
         public AudioSource dayMusic;
 		public AudioSource nightMusic;
 		public AudioSource menuMusic;
-		private AudioSource audioSource;
-        private float stopTimestamp = 12.5f;
-       
+		public AudioSource audioSource;
+        public static float stopTimestamp = 0f;
+       //12.5f;
+
 	void Start()
 	{
 		string sceneName = SceneManager.GetActiveScene().name;
-		if (sceneName == "MainMenu")
+		if (sceneName == "MainMenu" || sceneName == "Credits" || sceneName == "EndWin")
 		{
 			audioSource = menuMusic;
-			PlayMusicAtBegin();
+			PlayMusicAtTime(stopTimestamp);
 		} 
+
+		else if (sceneName == "EndLose" || sceneName == "EndLose_NoStamina")
+		{
+			audioSource = nightMusic;
+			PlayMusicAtTime(stopTimestamp);
+		} 
+
+		else if (GameHandler_CycleStamina.isNight == false)
+		{
+			audioSource = dayMusic;
+			PlayMusicAtTime(stopTimestamp);
+		} 
+		else
+		{
+			audioSource = nightMusic;
+			PlayMusicAtTime(stopTimestamp);
+		}
 		
 	}
 
@@ -61,6 +79,11 @@ public class AudioInterrupt : MonoBehaviour {
                 Debug.Log("Stopped audio at: " + stopTimestamp);
                 audioSource.Stop();
         }
+
+		public void GetTimeStamp()
+	{
+		stopTimestamp = audioSource.time;
+	}
 
         public void PlayMusicAtTime(float timeStamp){
                 if (timeStamp > audioSource.clip.length){

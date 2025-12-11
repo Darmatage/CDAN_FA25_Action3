@@ -152,6 +152,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 			intruderInsideTimer = intruderInsideTime;
 		}
 
+		GameHandler_CycleStamina.beatIntruder = true;
 		GameHandler_CycleStamina.hasIntruder = false;
 	}
 
@@ -179,6 +180,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	void playerLoses()
 	{
 		Debug.Log("YOU LOSE");
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene("SceneLose");
 	}
 

@@ -47,6 +47,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 	//intruder stuff:
 	private int intruderSpawnTime;
 	public static bool hasIntruder = false;
+	public static bool beatIntruder = false; //changd by flashlight, changed back here by switch to day
 
 //player energy stuff:
 	public static float playerEnergy = 100f;
@@ -171,7 +172,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		}
 
 		//trigger an intruder during the night!
-		if (!hasIntruder && isNight && theTime >= intruderSpawnTime)
+		if (!hasIntruder && isNight && theTime >= intruderSpawnTime && !beatIntruder)
 		{
 			hasIntruder = true;
 			GetComponent<GameHandler_IntruderStatus>().AddIntruder();
@@ -249,8 +250,10 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		}
 
 		hasIntruder = false;
+		beatIntruder = false;
 		energyLossRate = dayEnergyLossRate;
 		flashLightTimer.SetActive(false);
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().PlayDayMusic();
 	}
 
 	void SwitchToNight()
@@ -268,7 +271,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		intruderSpawnTime = Random.Range(0, nightLength/2); //spawn the player in the first half of the night
 		energyLossRate = nightEnergyLossRate;
 		flashLightTimer.SetActive(true);
-		
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().PlayNightMusic();
 	}
 
 
@@ -284,7 +287,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 		GameHandler_PlayerReturn.lastDoorPosition = bedReturnPos;
 		GameHandler_PlayerReturn.lastMap = thisLevel; 
-
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene ("Dreaming");
 	}
 
@@ -295,6 +298,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		if (isNight){
 			GoToSleepButton.SetActive(true);
 		}
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene ("House_Main");
 	}
 
@@ -310,7 +314,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 		GameHandler_PlayerReturn.lastDoorPosition = deskReturnPos;
 		GameHandler_PlayerReturn.lastMap = thisLevel; 
-
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene ("Working");
 	}
 
@@ -321,6 +325,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		if (!isNight){
 			GoToWorkButton.SetActive(true);
 		}
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene ("House_Main");
 	}
 
@@ -340,6 +345,7 @@ public class GameHandler_CycleStamina : MonoBehaviour
 
 	public void PlayerEnergyLose()
 	{
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene("EndLose_NoStamina");
 	} 
 

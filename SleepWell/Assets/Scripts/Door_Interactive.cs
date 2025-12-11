@@ -47,6 +47,7 @@ public class Door_Interactive : MonoBehaviour{
 			GameHandler_PlayerReturn.lastDoorPosition = doorReturnPos;
 			GameHandler_PlayerReturn.lastMap = thisLevel; 
 
+			GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
             SceneManager.LoadScene (NextLevel);
       }
 

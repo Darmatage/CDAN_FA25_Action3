@@ -31,11 +31,13 @@ public class GameHandler : MonoBehaviour{
         }
 
         public void OpenCredits(){
+			GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 			SceneManager.LoadScene("Credits");
         }
 
         public void RestartGame(){
 			Time.timeScale = 1f;
+			GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 			SceneManager.LoadScene("MainMenu");
         }
 

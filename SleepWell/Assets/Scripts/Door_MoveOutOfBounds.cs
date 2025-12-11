@@ -23,6 +23,7 @@ public class Door_MoveOutOfBounds : MonoBehaviour{
 
 	  public void StopPeeking()
 	{
+		GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>().GetTimeStamp();
 		SceneManager.LoadScene (NextLevel);
 	}
 

@@ -39,6 +39,21 @@ EditorBuildSettings:
     path: Assets/Scenes/SideViews/Room_Bathroom.unity
     guid: ef700a63cc8c3404086cd56181bbbdbc
   - enabled: 1
+    path: Assets/Scenes/SideViews/Room_Garage.unity
+    guid: da22e65c4d26bab4e870cea3d25479cc
+  - enabled: 1
+    path: Assets/Scenes/SideViews/Room_Guestbedroom.unity
+    guid: 9995c8e79f7994c4d8af06a904b2f6a4
+  - enabled: 1
+    path: Assets/Scenes/SideViews/Room_Kitchen.unity
+    guid: c75338cbe9ef16147b6b4e23745efb95
+  - enabled: 1
+    path: Assets/Scenes/SideViews/Room_Storagecloset.unity
+    guid: 8a384f2cfe75cdb448636612fce691db
+  - enabled: 1
+    path: Assets/Scenes/SideViews/Room_Workoutroom.unity
+    guid: 0f0e8b806230e764dbcd3078fcde6887
+  - enabled: 1
     path: Assets/Scenes/Dreaming.unity
     guid: daff62a36af357a4697d8911032157ec
   - enabled: 1

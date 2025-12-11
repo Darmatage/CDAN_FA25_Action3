@@ -41,11 +41,11 @@ AudioSource:
   m_GameObject: {fileID: 368500216460031990}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 512ba81e897676b4fbb21b1f4f3a59a0, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 304b9304b19d78d4a864887764f5dae7, type: 2}
   m_audioClip: {fileID: 8300000, guid: 67fad73bfd6407c4f8b3ec77ff153528, type: 3}
   m_Resource: {fileID: 8300000, guid: 67fad73bfd6407c4f8b3ec77ff153528, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -170,11 +170,11 @@ AudioSource:
   m_GameObject: {fileID: 2918517204590084459}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 512ba81e897676b4fbb21b1f4f3a59a0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 53f44ef6888a3b94abea9822e53928ae, type: 3}
-  m_Resource: {fileID: 8300000, guid: 53f44ef6888a3b94abea9822e53928ae, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 304b9304b19d78d4a864887764f5dae7, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 7d621f51c1707004cb25abb508bd2b0d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7d621f51c1707004cb25abb508bd2b0d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 1152913890724158247}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,6 +308,7 @@ MonoBehaviour:
   dayMusic: {fileID: 2949021459998720188}
   nightMusic: {fileID: 2212266532858221616}
   menuMusic: {fileID: 329726344800516104}
+  audioSource: {fileID: 0}
 --- !u!1 &8593026683696711309
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,11 +350,11 @@ AudioSource:
   m_GameObject: {fileID: 8593026683696711309}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 512ba81e897676b4fbb21b1f4f3a59a0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 67fad73bfd6407c4f8b3ec77ff153528, type: 3}
-  m_Resource: {fileID: 8300000, guid: 67fad73bfd6407c4f8b3ec77ff153528, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 304b9304b19d78d4a864887764f5dae7, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 888e84622ef55874e8dec802d1823f81, type: 3}
+  m_Resource: {fileID: 8300000, guid: 888e84622ef55874e8dec802d1823f81, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
