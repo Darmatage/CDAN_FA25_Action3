@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Lose.
+  m_text: YOU LOSE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -264,8 +264,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4293014091
-  m_fontColor: {r: 0.29250497, g: 0.1966002, b: 0.8867924, a: 1}
+    rgba: 4289492606
+  m_fontColor: {r: 0.49286687, g: 0.4626343, b: 0.6754716, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sweet Dreams.
+  m_text: No more dreams for you.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287376261
-  m_fontColor: {r: 0.520283, g: 0.16776434, b: 0.5471698, a: 1}
+    rgba: 4289427070
+  m_fontColor: {r: 0.49411768, g: 0.46274513, b: 0.67058825, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -974,22 +974,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514569483864692183, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.49995
       objectReference: {fileID: 0}
     - target: {fileID: 7514569483864692183, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7884295506373083067, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.49995
       objectReference: {fileID: 0}
     - target: {fileID: 7884295506373083067, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7884295506373083067, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
       propertyPath: m_AnchorMin.x
+      value: 0.49995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516984014333397157, guid: 84637f3e5740c3141b549fdcb5e1d3b3, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
