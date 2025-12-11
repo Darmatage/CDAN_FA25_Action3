@@ -238,7 +238,9 @@ public class GameHandler_CycleStamina : MonoBehaviour
 		dayOfWeek++;
 		if (dayOfWeek >= 8)
 		{
-			dayOfWeek=1;
+			//dayOfWeek=1;
+			//YOU WIN!
+			SceneManager.LoadScene("EndWin");
 		}
 		isNight = false;
 		iconDay.SetActive(true);

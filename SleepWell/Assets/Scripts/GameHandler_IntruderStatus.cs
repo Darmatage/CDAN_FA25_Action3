@@ -41,11 +41,11 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 		intruderInsideTime = nightPortion;
 	}
 
-//Timers for palyer doom OUTSIDE of pek-a-boo system at doors and wndows,
+//Timers for player doom OUTSIDE of pek-a-boo system at doors and wndows,
 //isOutside and isInside are the intruder status
     void FixedUpdate()
     {
-		//keyboard suystem for adding an intruder, just for testing:
+		//keyboard system for adding an intruder, just for testing:
 		//if (Input.GetKeyDown("i") && currentSceneName=="House_Main")
 		if (Input.GetKeyDown("i"))
 		{
@@ -55,7 +55,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 		//NOTE; GmeHandler_CyleStamina DOES have a way to trigger the intruder in the first half of each night 
 
 		//Global Intruder Timers for active intruder when the plyer is not looking in the right place: 
-		if (isOutside && !playerAtTheWindowDoor)
+		if (isOutside && !playerAtTheWindowDoor && GameHandler_CycleStamina.isNight==false)
 		{
 			intruderOutsideTimer -= 0.01f;
 			if (intruderOutsideTimer <= 0)
@@ -70,7 +70,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 				AddIntruderInside();
 			}
 		}
-		else if (isInside && !playerAtTheWindowDoor){
+		else if (isInside && !playerAtTheWindowDoor && GameHandler_CycleStamina.isNight==false){
 			intruderInsideTimer -= 0.01f;
 			if (intruderInsideTimer <= 0){
 				intruderInsideTimer = intruderInsideTime;
@@ -78,7 +78,11 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 				isInside = false;
 				playerLoses();
 			} 
-		}        
+		} 
+		else if (GameHandler_CycleStamina.isNight==false){
+				intruderScene = null;
+				GameHandler_CycleStamina.hasIntruder = false;
+		}       
     }
 
 //next, decide randomly which room:
@@ -121,7 +125,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 	{
 		//Debug.Log("checking player location in " + currentSceneName);
 		if (intruderScene != null){
-			if (currentSceneName == intruderScene)
+			if (currentSceneName == intruderScene && GameHandler_CycleStamina.isNight==false)
 			{	
 				Debug.Log("MATCH: current scene = " + currentSceneName + ", intruder scene = " + intruderScene);
 				playerAtTheWindowDoor = true;
@@ -154,6 +158,7 @@ public class GameHandler_IntruderStatus : MonoBehaviour{
 
 		GameHandler_CycleStamina.beatIntruder = true;
 		GameHandler_CycleStamina.hasIntruder = false;
+		intruderScene = null;
 	}
 
 	public void IntruderFinishedStage()
