@@ -13,6 +13,7 @@ TagManager:
   - Sheep
   - Desk
   - flashlightTimer
+  - AudioManager
   layers:
   - Default
   - TransparentFX
@@ -47,15 +48,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG_Sky
-    uniqueID: 82344037
-    locked: 0
-  - name: BG_Middle
-    uniqueID: 158699983
-    locked: 0
-  - name: BG_Trees
-    uniqueID: 1570524395
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -73,6 +65,9 @@ TagManager:
     locked: 0
   - name: SideView_Wall
     uniqueID: 3957645319
+    locked: 0
+  - name: BG_Sky_Platformer
+    uniqueID: 82344037
     locked: 0
   m_RenderingLayers:
   - Default
